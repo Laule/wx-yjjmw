@@ -1,7 +1,9 @@
 <view>
   <!-- 搜索 -->
-  <view class="search">
-    <icon type="search" size="16" color="#dddddd"></icon><input placeholder="请输入关键词"></input>
+  <view class="search-container">
+    <icon type="search" size="13" color="#ffffff" class="search-img"></icon>
+    <input class="search-input" placeholder="请输入关键词" placeholder-class="search-placeholder"></input>
+    <text class="search-text">搜索</text>
   </view>
   <!-- 搜索 -->
 
@@ -21,87 +23,101 @@
 
   <!-- 菜单  -->
   <view class="menu-container">
-    <view class="menu-item">
-      餐饮
+    <view class="menu-container-box">
+      <view class="menu-item">
+        <image src="http://m.jmw.com.cn/images/new_icon/cy.png"></image>
+        <text>餐饮</text>
+      </view>
+      <view class="menu-item">
+        <image src="http://m.jmw.com.cn/images/new_icon/zj.png"></image>
+        <text>母婴</text>
+      </view>
+      <view class="menu-item">
+        <image src="http://m.jmw.com.cn/images/new_icon/ls.png"></image>
+        <text>零售</text>
+      </view>
+      <view class="menu-item">
+        <image src="http://m.jmw.com.cn/images/new_icon/fz.png"></image>
+        <text>服装</text>
+      </view>
+      <view class="menu-item">
+        <image src="http://m.jmw.com.cn/images/new_icon/jy.png"></image>
+        <text>教育</text>
+      </view>
+      <view class="menu-item">
+        <image src="http://m.jmw.com.cn/images/new_icon/jc.png"></image>
+        <text>建材</text>
+      </view>
+      <view class="menu-item">
+        <image src="http://m.jmw.com.cn/images/new_icon/qn.png"></image>
+        <text>服务</text>
+      </view>
+      <view class="menu-item">
+        <image src="http://m.jmw.com.cn/images/new_icon/yey.png"></image>
+        <text>游乐</text>
+      </view>
+      <view class="menu-item">
+        <image src="http://m.jmw.com.cn/images/new_icon/zb.png"></image>
+        <text>珠宝</text>
+      </view>
+      <view class="menu-item">
+        <image src="http://m.jmw.com.cn/images/new_icon/jx.png"></image>
+        <text>更多</text>
+      </view>
     </view>
-    <view class="menu-item">
-      母婴
-    </view>
-    <view class="menu-item">
-      零售
-    </view>
-    <view class="menu-item">
-      服装
-    </view>
-    <view class="menu-item">
-      教育
-    </view>
-    <view class="menu-item">
-      建材
-    </view>
-    <view class="menu-item">
-      服务
-    </view>
-    <view class="menu-item">
-      游乐
-    </view>
-    <view class="menu-item">
-      珠宝
-    </view>
-    <view class="menu-item">
-      更多
-    </view>
-
   </view>
   <!-- 菜单-->
 
   <!-- 头条 -->
   <view class="info-container">
-    <view>
-      <text>加盟头条</text>
+    <view class="info-main-title">
+      <text>加盟\n头条</text>
     </view>
     <swiper class="info-list" vertical='{{true}}'>
-      <swiper-item class="info-item">
-        <image class="info-img" src=""></image>
-        <view class="info-content">
-          <text class="info-title">城市实时仿真成为可能，智能城市...</text>
-          <view class="info-date">
-            <image class="info-date-icon"></image>
-            <text class="info-date-text">2019-9-24</text>
-          </view>
-          <view class="info-view">
-            <image class="info-view-icon"></image>
-            <text class="info-view-text">11823</text>
+      <swiper-item>
+        <view class="info-item">
+          <image class="info-img" src="http://attachment4.jmw.com.cn/image/2019/09/24/15693178205348.jpg!m-w240h143"></image>
+
+          <view class="info-content">
+            <text class="info-title">城市实时仿真成为可能，智能城市...</text>
+            <view class="info-link">
+              <image class="info-link-icon" src=""></image>
+              <text class="info-link-num">2019-9-24</text>
+              <image class="info-link-icon" src=""></image>
+              <text class="info-link-num">224</text>
+            </view>
           </view>
         </view>
       </swiper-item>
 
-      <swiper-item class="info-item">
-        <image class="info-img" src=""></image>
-        <view class="info-content">
-          <text class="info-title">城市实时仿真成为可能，智能城市...</text>
-          <view class="info-date">
-            <image class="info-date-icon"></image>
-            <text class="info-date-text">2019-9-24</text>
-          </view>
-          <view class="info-view">
-            <image class="info-view-icon"></image>
-            <text class="info-view-text">11823</text>
+      <swiper-item>
+        <view class="info-item">
+          <image class="info-img" src="http://attachment4.jmw.com.cn/image/2019/09/24/15693178205348.jpg!m-w240h143"></image>
+
+          <view class="info-content">
+            <text class="info-title">城市实时仿真成为可能，智能城市...</text>
+            <view class="info-link">
+              <image class="info-link-icon" src=""></image>
+              <text class="info-link-num">2019-9-24</text>
+              <image class="info-link-icon" src=""></image>
+              <text class="info-link-num">224</text>
+            </view>
           </view>
         </view>
       </swiper-item>
 
-      <swiper-item class="info-item">
-        <image class="info-img" src=""></image>
-        <view class="info-content">
-          <text class="info-title">城市实时仿真成为可能，智能城市...</text>
-          <view class="info-date">
-            <image class="info-date-icon"></image>
-            <text class="info-date-text">2019-9-24</text>
-          </view>
-          <view class="info-view">
-            <image class="info-view-icon"></image>
-            <text class="info-view-text">11823</text>
+      <swiper-item>
+        <view class="info-item">
+          <image class="info-img" src="http://attachment4.jmw.com.cn/image/2019/09/24/15693178205348.jpg!m-w240h143"></image>
+
+          <view class="info-content">
+            <text class="info-title">大大大大大大大大大大大...</text>
+            <view class="info-link">
+              <image class="info-link-icon" src=""></image>
+              <text class="info-link-num">2019-9-24</text>
+              <image class="info-link-icon" src=""></image>
+              <text class="info-link-num">224</text>
+            </view>
           </view>
         </view>
       </swiper-item>
