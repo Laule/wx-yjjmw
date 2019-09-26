@@ -73,17 +73,16 @@
     <view class="info-main-title">
       <text>加盟\n头条</text>
     </view>
-    <swiper class="info-list" vertical='{{true}}'>
+    <swiper class="info-list" vertical='{{true}}' autoplay>
       <swiper-item>
         <view class="info-item">
-          <image class="info-img" src="http://attachment4.jmw.com.cn/image/2019/09/24/15693178205348.jpg!m-w240h143"></image>
-
+          <image class="info-img" src="http://attachment2.jmw.com.cn/pic/2019/07/29/90961564393995.jpg!m-w270h203"></image>
           <view class="info-content">
-            <text class="info-title">城市实时仿真成为可能，智能城市...</text>
+            <text class="info-title">城市实时仿真成为可能212112121221，智能城市...</text>
             <view class="info-link">
-              <image class="info-link-icon" src=""></image>
+              <image class="info-link-icon" src="/images/icon/date.png"></image>
               <text class="info-link-num">2019-9-24</text>
-              <image class="info-link-icon" src=""></image>
+              <image class="info-link-icon m-l-20" src="/images/icon/view.png"></image>
               <text class="info-link-num">224</text>
             </view>
           </view>
@@ -92,110 +91,133 @@
 
       <swiper-item>
         <view class="info-item">
-          <image class="info-img" src="http://attachment4.jmw.com.cn/image/2019/09/24/15693178205348.jpg!m-w240h143"></image>
-
+          <image class="info-img" src="http://attachment2.jmw.com.cn/pic/2019/07/29/90961564393995.jpg!m-w270h203"></image>
           <view class="info-content">
-            <text class="info-title">城市实时仿真成为可能，智能城市...</text>
+            <text class="info-title">微信小程序text文本溢出省略在某种状态下隐藏失败的小问题</text>
             <view class="info-link">
-              <image class="info-link-icon" src=""></image>
+              <image class="info-link-icon" src="/images/icon/date.png"></image>
               <text class="info-link-num">2019-9-24</text>
-              <image class="info-link-icon" src=""></image>
-              <text class="info-link-num">224</text>
+              <image class="info-link-icon m-l-20" src="/images/icon/view.png"></image>
+              <text class="info-link-num">221</text>
             </view>
           </view>
         </view>
       </swiper-item>
 
-      <swiper-item>
-        <view class="info-item">
-          <image class="info-img" src="http://attachment4.jmw.com.cn/image/2019/09/24/15693178205348.jpg!m-w240h143"></image>
-
-          <view class="info-content">
-            <text class="info-title">大大大大大大大大大大大...</text>
-            <view class="info-link">
-              <image class="info-link-icon" src=""></image>
-              <text class="info-link-num">2019-9-24</text>
-              <image class="info-link-icon" src=""></image>
-              <text class="info-link-num">224</text>
-            </view>
-          </view>
-        </view>
-      </swiper-item>
     </swiper>
-
+    <image class="info-more" src="/images/icon/right-arrow.png"></image>
   </view>
   <!-- 头条 -->
 
   <!-- 加入 -->
   <view class="join-container">
-    <view class="join-left">
-      <text>创业需求<text>量身定制</text></text>
-      <image src=""></image>
+    <view class="join-box">
+      <view class="join-title">
+        <text class="join-title-main">创业需求</text>
+        <text class="join-title-slogan">量身定制</text>
+      </view>
+      <image class="join-img" src="http://image1.jmw.com.cn/public/img/xinxiliu_3.png"></image>
     </view>
 
-    <view class="join-right">
-      <text>品牌入驻<text>提升品牌影响力</text></text>
-      <image src=""></image>
+    <view class="join-box">
+      <view class="join-title">
+        <text class="join-title-main">品牌入驻</text>
+        <text class="join-title-slogan">提升品牌影响力</text>
+      </view>
+      <image class="join-img" src="http://image1.jmw.com.cn/public/img/xinxiliu_3.png"></image>
     </view>
   </view>
   <!-- 加入 -->
 
   <!-- 专题 -->
   <view class="topPic-container">
-
     <view class="topPic-header">
       <text>精选专题</text>
     </view>
-    <scroll-view scroll-y>
-      <view class="topPic-item">
-        <image class="topPic-img" src=""></image>
-        <text class="topPic-title">1831品牌认证</text>
-        <text class="topPic-slogan">严格筛选品牌，减低风险</text>
-      </view>
+    <view class="topPic-wrapper">
+      <scroll-view scroll-x="{{true}}">
+        <view class="topPic-box">
+          <view class="topPic-item">
+            <image class="topPic-img" src="http://m.jmw.com.cn/img/robibt_new.png"></image>
+            <text class="topPic-title">1831品牌认证</text>
+            <text class="topPic-slogan">严格筛选品牌，减低风险</text>
+          </view>
 
-      <view class="topPic-item">
-        <image class="topPic-img" src=""></image>
-        <text class="topPic-title">大众美食专区</text>
-        <text class="topPic-slogan">舌尖上的美味，大众最爱</text>
-      </view>
+          <view class="topPic-item">
+            <image class="topPic-img" src="http://m.jmw.com.cn/img/goodFood_new.png"></image>
+            <text class="topPic-title">大众美食专区</text>
+            <text class="topPic-slogan">舌尖上的美味，大众最爱</text>
+          </view>
 
-      <view class="topPic-item">
-        <image class="topPic-img" src=""></image>
-        <text class="topPic-title">推荐品牌</text>
-        <text class="topPic-slogan">精选优质品牌</text>
-      </view>
-    </scroll-view>
+          <view class="topPic-item">
+            <image class="topPic-img" src="http://image1.jmw.com.cn/public/images/290_296.png"></image>
+            <text class="topPic-title">推荐品牌</text>
+            <text class="topPic-slogan">精选优质品牌</text>
+          </view>
+          <view class="placeholder">
+            <text decode="{{true}}">&nbsp;</text>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
   </view>
   <!-- 专题 -->
 
   <!-- 热门行业 -->
-
   <view class="industry-container">
-
     <view class="industry-header">
       <text>热门行业</text>
     </view>
+    <view class="industry-wrapper">
+      <scroll-view scroll-x="{{true}}">
+        <view class="industry-box">
+          <view class="industry-item">
+            <image class="industry-img" src="http://attachment2.jmw.com.cn/pic/2019/06/14/11651560503790.jpg!m-w195h147"></image>
+            <view class="industry-info">
+              <view class="industry-info-block">
+                <text class="industry-text">餐饮美食</text>
+                <text class="industry-line"></text>
+                <text class="industry-brand-total">18273个品牌</text>
+              </view>
+            </view>
+          </view>
 
-    <scroll-view scroll-y>
-      <view class="industry-item">
-        <image src=""></image>
-        <text>餐饮美食</text>
-        <text class="industry-line"></text>
-        <text class="industry-brand-total">18273个品牌</text>
-      </view>
-      <view class="industry-item">
-        <image src=""></image>
-        <text>教育培训</text>
-        <text class="industry-line"></text>
-        <text class="industry-brand-total">18273个品牌</text>
-      </view>
-      <view class="industry-item">
-        <image src=""></image>
-        <text>民宿酒店</text>
-        <text class="industry-line"></text>
-        <text class="industry-brand-total">18273个品牌</text>
-      </view>
-    </scroll-view>
+          <view class="industry-item">
+            <image class="industry-img" src="http://attachment2.jmw.com.cn/pic/2019/05/21/42561558424524.jpg!m-w195h147"></image>
+            <view class="industry-info">
+              <view class="industry-info-block">
+                <text class="industry-text">教育培训</text>
+                <text class="industry-line"></text>
+                <text class="industry-brand-total">18273个品牌</text>
+              </view>
+            </view>
+          </view>
+
+          <view class="industry-item">
+            <image class="industry-img" src="http://attachment2.jmw.com.cn/pic/2018/07/13/76821531450602.jpg!m-w195h147"></image>
+            <view class="industry-info">
+              <view class="industry-info-block">
+                <text class="industry-text">民宿酒店</text>
+                <text class="industry-line"></text>
+                <text class="industry-brand-total">18273个品牌</text>
+              </view>
+            </view>
+          </view>
+
+          <view class="industry-item">
+            <image class="industry-img" src="http://attachment2.jmw.com.cn/pic/2018/07/13/76821531450602.jpg!m-w195h147"></image>
+            <view class="industry-info">
+              <view class="industry-info-block">
+                <text class="industry-text">民宿酒店</text>
+                <text class="industry-line"></text>
+                <text class="industry-brand-total">18273个品牌</text>
+              </view>
+            </view>
+          </view>
+
+        </view>
+      </scroll-view>
+    </view>
 
   </view>
 
@@ -203,78 +225,94 @@
 
 
   <!-- 人气品牌 -->
-
   <view class="brand-container">
-
     <view class="brand-header">
       <text>人气品牌</text>
     </view>
+    <view class="brand-wrapper">
+      <scroll-view scroll-x="{{true}}">
+        <view class="brand-box">
+          <view class="brand-item">
+            <image class="brand-img" src="http://attachment2.jmw.com.cn/pic/2018/08/10/87161533885029.jpg!m-w195h147"></image>
+            <text class="brand-title">海风K12在线教育</text>
+            <text class="brand-price">￥3-5万</text>
+          </view>
 
-    <scroll-view scroll-y>
-      <view class="brand-item">
-        <image src=""></image>
-        <text class="brand-title">海风K12在线教育</text>
-        <text class="brand-price">￥3-5万</text>
-      </view>
+          <view class="brand-item">
+            <image class="brand-img" src="http://attachment2.jmw.com.cn/pic/2018/08/10/87161533885029.jpg!m-w195h147"></image>
+            <text class="brand-title">海风K12在线教育</text>
+            <text class="brand-price">￥3-5万</text>
+          </view>
 
-      <view class="brand-item">
-        <image src=""></image>
-        <text class="brand-title">海风K12在线教育</text>
-        <text class="brand-price">￥3-5万</text>
-      </view>
-
-      <view class="brand-item">
-        <image src=""></image>
-        <text class="brand-title">海风K12在线教育</text>
-        <text class="brand-price">￥3-5万</text>
-      </view>
-    </scroll-view>
+          <view class="brand-item">
+            <image class="brand-img" src="http://attachment2.jmw.com.cn/pic/2018/08/10/87161533885029.jpg!m-w195h147"></image>
+            <text class="brand-title">海风K12在线教育</text>
+            <text class="brand-price">￥3-5万</text>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
   </view>
   <!-- 人气品牌 -->
 
   <!-- 品牌推荐 -->
-  <view class="brand-recommend-container">
-    <view class="brand-recommend-header">
-      <text>品牌推荐</text>
-      <text>8232人已申请加盟</text>
+  <view class="project-recommend-container">
+    <view class="project-recommend-header">
+      <text class="project-recommend-text">品牌推荐</text>
+      <text class="project-apply-total-num">8232人已申请加盟</text>
     </view>
 
-
-    <view class="brand-recommend-item">
-      <image src=""></image>
-      <view class="brand-recommend-info">
-        <text class="brand-title">
-        海风K12在线教育
-        </text>
-        <text class="brand-super">
-        全国381家 10家直营店
-        </text>
-        <view class="brand-tag">
-          <view class="brand-tag-item">教育</view>
-          <view class="brand-tag-item">91认证</view>
-          <view class="brand-tag-item">2年品牌</view>
-        </view>
-
-        <view class="brand-price-apply-num">
-
-          <text class="brand-price">10-20万</text>
-
-          <text class="brand-apply-num">
-       1931人已申请
+    <view class="project-item-container">
+      <image class="project-item-img" src="http://attachment2.jmw.com.cn/slt/2019/09/04/s1_53221567565594.jpg!m-w195h147"></image>
       
-      </text>
-
+      <view class="project-item-info">
+        <text class="project-item-title">海风K12在线教育</text>
+        <text class="project-item-super">全国381家 10家直营店</text>
+        <view class="project-item-tag">
+          <view class="project-item-tagItem">教育</view>
+          <view class="project-item-tagItem">91认证</view>
+          <view class="project-item-tagItem">2年品牌</view>
         </view>
 
+        <view class="project-item-price-apply-num">
+          <text class="project-item-price">10-20万</text>
+          <text class="project-item-apply-num">1931人已申请</text>
+        </view>
       </view>
+
+
     </view>
+
+    <view class="project-item-container">
+      <image class="project-item-img" src="http://attachment2.jmw.com.cn/slt/2019/09/04/s1_53221567565594.jpg!m-w195h147"></image>
+      
+      <view class="project-item-info">
+        <text class="project-item-title">海风K12在线教育</text>
+        <text class="project-item-super">全国381家 10家直营店</text>
+        <view class="project-item-tag">
+          <view class="project-item-tagItem">教育</view>
+          <view class="project-item-tagItem">91认证</view>
+          <view class="project-item-tagItem">2年品牌</view>
+        </view>
+
+        <view class="project-item-price-apply-num">
+          <text class="project-item-price">10-20万</text>
+          <text class="project-item-apply-num">1931人已申请</text>
+        </view>
+      </view>
+
+
+    </view>
+
+
+
   </view>
   <!-- 品牌推荐 -->
 
 
   <!-- 提醒 -->
   <view class="tips-container">
-    <image class="logo"></image>
+    <image class="tips-logo"></image>
     <text class="tips-text">源进加盟网友情提醒:投资有风险 加盟需谨慎</text>
   </view>
   <!-- 提醒 -->
