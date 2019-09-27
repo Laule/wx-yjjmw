@@ -1,0 +1,18 @@
+<view class="slide-pattern-container">
+  <view class="slide-pattern-header">
+    <text>{{slidePatternTitle}}</text>
+  </view>
+  <view class="slide-pattern-content">
+    <scroll-view scroll-x="true" class="slide-pattern-scroll">
+      <block wx:for="{{slidePatternData}}" wx:for-item="slide" wx:key>
+        <view class="slide-pattern-item" bindtap="_onSlidePatternTap" data-current="{{slide.id}}">
+          <view class="slide-pattern-item-box">
+            <image class="slide-pattern-cover" src="{{slide.imgUrl}}"></image>
+            <text class="slide-pattern-title">{{slide.title}}</text>
+            <text class="slide-pattern-slogan" class="{{slidePatternTitle=='人气品牌' ? 'on' : 'slide-pattern-slogan'}}">{{slide.slogan}}</text>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>

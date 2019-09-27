@@ -1,0 +1,19 @@
+<view class="slide-pattern-modal-container">
+  <view class="slide-pattern-modal-header">
+    <text>{{slidePatternModalTitle}}</text>
+  </view>
+  <view class="slide-pattern-modal-content">
+    <scroll-view scroll-x="{{true}}" class="slide-pattern-modal-scroll">
+      <block wx:for="{{slidePatternModalData}}" wx:for-item="slide" wx:key>
+        <view class="slide-pattern-modal-item" bindtap="_onSlidePatternModalTap" data-current="{{slide.id}}">
+          <image class="slide-pattern-modal-cover" src="{{slide.imgUrl}}"></image>
+          <view class="slide-pattern-modal-box">
+            <text class="slide-pattern-modal-text">{{slide.title}}</text>
+            <text class="slide-pattern-modal-line"></text>
+            <text class="slide-pattern-modal-total">{{slide.total}}个品牌</text>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>

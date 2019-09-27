@@ -1,0 +1,45 @@
+<template name="project-item">
+
+    <view class="project-item-container">
+      <image class="project-item-img" src="http://attachment2.jmw.com.cn/slt/2019/09/04/s1_53221567565594.jpg!m-w195h147"></image>
+
+      <view class="project-item-info">
+        <text class="project-item-title">海风K12在线教育</text>
+        <text class="project-item-super">全国381家 10家直营店</text>
+        <view class="project-item-tag">
+          <view class="project-item-tagItem">教育</view>
+          <view class="project-item-tagItem">91认证</view>
+          <view class="project-item-tagItem">2年品牌</view>
+        </view>
+
+        <view class="project-item-price-apply-num">
+          <text class="project-item-price">10-20万</text>
+          <text class="project-item-apply-num">1931人已申请</text>
+        </view>
+      </view>
+
+
+    </view>
+
+    <view class="project-item-container">
+      <image class="project-item-img" src="http://attachment2.jmw.com.cn/slt/2019/09/04/s1_53221567565594.jpg!m-w195h147"></image>
+
+      <view class="project-item-info">
+        <text class="project-item-title">海风K12在线教育</text>
+        <text class="project-item-super">全国381家 10家直营店</text>
+        <view class="project-item-tag">
+          <view class="project-item-tagItem">教育</view>
+          <view class="project-item-tagItem">91认证</view>
+          <view class="project-item-tagItem">2年品牌</view>
+        </view>
+
+        <view class="project-item-price-apply-num">
+          <text class="project-item-price">10-20万</text>
+          <text class="project-item-apply-num">1931人已申请</text>
+        </view>
+      </view>
+
+
+    </view>
+
+</template>

@@ -1,0 +1,72 @@
+
+.slide-pattern-modal-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rpx;
+  background-color: #fff;
+}
+
+.slide-pattern-modal-header {
+  color: rgba(16, 16, 16, 1);
+  font-size: 28rpx;
+  margin: 10rpx auto 10rpx 20rpx;
+}
+
+.slide-pattern-modal-content{
+  margin-left: 20rpx;
+}
+.slide-pattern-modal-scroll{
+  background-color: #fff;
+  white-space: nowrap;
+}
+
+.slide-pattern-modal-item {
+  display: inline-block;
+  margin-right: 20rpx;
+  cursor: pointer;
+  width: 280rpx;
+  height: 250rpx;
+  margin-bottom: 20rpx;
+  position: relative;
+  border-radius: 10rpx;
+}
+
+.slide-pattern-modal-box {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10rpx;
+  color: #fff;
+  align-items: center;
+}
+
+.slide-pattern-modal-cover
+{
+  width: 280rpx;
+  height: 250rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+
+
+.slide-pattern-modal-text {
+  margin-top: 80rpx;
+  font-size: 28rpx;
+}
+
+.slide-pattern-modal-line {
+  margin: 0 auto;
+  width: 200rpx;
+  height: 1px;
+  display: block;
+  border-bottom: 1px solid #fff;
+}
+
+.slide-pattern-modal-total {
+  font-size: 28rpx;
+}

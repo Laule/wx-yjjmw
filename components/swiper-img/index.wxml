@@ -1,0 +1,7 @@
+<swiper catchtap="_onBannerSwiperTap" vertical='{{false}}' indicator-color='#ffffff' indicator-active-color='#e1e1e1' indicator-dots='true'>
+  <block wx:for="{{swiperBannerData}}" wx:for-item="item" wx:key>
+    <swiper-item  data-current="{{item.id}}">
+      <image src='{{item.imgUrl}}'></image>
+    </swiper-item>
+    </block>
+  </swiper>

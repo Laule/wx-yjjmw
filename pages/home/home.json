@@ -1,3 +1,8 @@
 {
-  "navigationBarTitleText": "源进加盟网"
+  "navigationBarTitleText": "源进加盟网",
+  "usingComponents": {
+    "swiperImg": "../../components/swiper-img/index",
+    "slidePattern": "../../components/slide-pattern/index",
+    "slidePatternModal": "../../components/slide-pattern-modal/index"
+  }
 }

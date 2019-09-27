@@ -1,2 +1,52 @@
-<!--pages/category/category.wxml-->
-<text>pages/category/category.wxml</text>
+<view class="category">
+  <view class="search">
+    <view class="ser">
+      <icon type="search" size="14"></icon>
+      <text>请输入项目名称</text>
+    </view>
+  </view>
+
+  <view class="content">
+    <scroll-view class="left">
+      <view class="iconText">
+        餐饮
+      </view>
+      <view class="iconText">
+        餐饮
+      </view><view class="iconText">
+        餐饮
+      </view><view class="iconText">
+        餐饮
+      </view><view class="iconText">
+        餐饮
+      </view><view class="iconText">
+        餐饮
+      </view><view class="iconText">
+        餐饮
+      </view><view class="iconText">
+        餐饮
+      </view><view class="iconText">
+        餐饮
+      </view><view class="iconText">
+        餐饮
+      </view><view class="iconText">
+        餐饮
+      </view><view class="iconText">
+        餐饮
+      </view><view class="iconText">
+        餐饮
+      </view>
+    </scroll-view>
+
+    <scroll-view class="right">
+    <text>内容</text>
+    <text>内容</text>
+    <text>内容</text><text>内容</text><text>内容</text><text>内容</text><text>内容</text><text>内容</text><text>内容</text><text>内容</text><text>内容</text><text>内容</text><text>内容</text><text>内容</text><text>内容</text><text>内容</text><text>内容</text><text>内容</text><text>内容</text><text>内容</text><text>内容</text><text>内容</text><text>内容</text><text>内容</text><text>内容</text><text>内容</text><text>内容</text>
+     
+    </scroll-view>
+
+
+  </view>
+
+
+</view>

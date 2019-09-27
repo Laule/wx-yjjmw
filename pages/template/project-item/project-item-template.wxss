@@ -1,0 +1,64 @@
+.project-item-container {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #ddd;
+  width: 730rpx;
+  margin: 0 auto;
+  /* background: yellow; */
+}
+
+.project-item-img {
+  width: 220rpx;
+  height: 180rpx;
+  margin: 20rpx 0;
+}
+
+.project-item-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  width: 490rpx;
+}
+
+.project-item-title {
+  font-size: 28rpx;
+}
+
+.project-item-super {
+  font-size: 20rpx;
+  margin-top: 10rpx;
+}
+
+.project-item-tag {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10rpx;
+}
+
+.project-item-tagItem {
+  border: 1rpx solid #ddd;
+  font-size: 20rpx;
+  padding: 5rpx 10rpx;
+  margin-right: 10rpx;
+}
+
+.project-item-price-apply-num {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 15rpx;
+}
+
+.project-item-price {
+  color: rgba(175, 42, 48, 1);
+  font-size: 28rpx;
+  vertical-align: middle;
+}
+
+.project-item-apply-num {
+  color: rgba(16, 16, 16, 1);
+  font-size: 20rpx;
+  vertical-align: middle;
+  padding-top: 8rpx;
+}

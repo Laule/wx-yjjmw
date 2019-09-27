@@ -1,3 +1,5 @@
+@import "../template/project-item/project-item-template.wxss";
+
 page {
   background-color: #eee;
 }
@@ -44,15 +46,7 @@ page {
   color: #fff;
 }
 
-swiper {
-  width: 100%;
-  height: 375rpx;
-}
 
-swiper image {
-  width: 100%;
-  height: 375rpx;
-}
 
 .menu-container {
   padding: 20rpx 0;
@@ -200,172 +194,6 @@ swiper image {
   margin: 10rpx 10rpx 10rpx auto;
 }
 
-.topPic-container {
-  margin-top: 10rpx;
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-}
-
-.topPic-header {
-  color: rgba(16, 16, 16, 1);
-  font-size: 28rpx;
-  margin: 10rpx auto 10rpx 20rpx;
-}
-
-.topPic-wrapper {
-  margin-left: 20rpx;
-}
-
-.topPic-box {
-  display: flex;
-  flex-direction: row;
-}
-
-.topPic-item {
-  display: flex;
-  flex-direction: column;
-  width: 280rpx;
-  height: 250rpx;
-  margin-bottom: 10rpx;
-  margin-right: 20rpx;
-}
-
-.topPic-img {
-  width: 280rpx;
-  height: 180rpx;
-}
-
-.topPic-title {
-  font-size: 28rpx;
-  text-align: left;
-  color: rgba(16, 16, 16, 1);
-}
-
-.topPic-slogan {
-  font-size: 20rpx;
-  color: rgba(16, 16, 16, 1);
-  text-align: left;
-}
-
-.industry-container {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20rpx;
-  background-color: #fff;
-}
-
-.industry-header {
-  color: rgba(16, 16, 16, 1);
-  font-size: 28rpx;
-  margin: 10rpx auto 10rpx 20rpx;
-}
-
-.industry-wrapper {
-  margin-left: 20rpx;
-}
-
-.industry-box {
-  display: flex;
-  flex-direction: row;
-}
-
-.industry-item {
-  width: 280rpx;
-  height: 250rpx;
-  margin-bottom: 20rpx;
-  position: relative;
-  border-radius: 10rpx;
-  margin-right: 20rpx;
-}
-
-.industry-img {
-  width: 280rpx;
-  height: 250rpx;
-  border-radius: 10rpx;
-  overflow: hidden;
-}
-
-.industry-info {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 10rpx;
-}
-
-.industry-info-block {
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.industry-text {
-  margin-top: 80rpx;
-  font-size: 28rpx;
-}
-
-.industry-line {
-  width: 200rpx;
-  height: 1px;
-  display: block;
-  border-bottom: 1px solid #fff;
-}
-
-.industry-brand-total {
-  font-size: 28rpx;
-}
-
-.brand-container {
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  margin-top: 20rpx;
-}
-
-.brand-header {
-  color: rgba(16, 16, 16, 1);
-  font-size: 28rpx;
-  margin: 10rpx auto 10rpx 20rpx;
-}
-
-.brand-wrapper {
-  margin-left: 20rpx;
-}
-
-.brand-box {
-  display: flex;
-  flex-direction: row;
-}
-
-.brand-item {
-  width: 280rpx;
-  height: 250rpx;
-  margin-bottom: 20rpx;
-  border-radius: 10rpx;
-  margin-right: 20rpx;
-  display: flex;
-  flex-direction: column;
-}
-
-.brand-img {
-  width: 280rpx;
-  height: 180rpx;
-  border-radius: 10rpx;
-}
-
-.brand-title {
-  font-size: 28rpx;
-}
-
-.brand-price {
-  color: rgba(175, 42, 48, 1);
-  font-size: 28rpx;
-}
-
 .project-recommend-container {
   background-color: #fff;
   margin-top: 20rpx;
@@ -388,75 +216,6 @@ swiper image {
   margin: 20rpx 20rpx 20rpx auto;
   font-size: 28rpx;
 }
-
-/* project item template style*/
-
-.project-item-container {
-  display: flex;
-  flex-direction: row;
-  border-bottom: 1px solid #ddd;
-  width: 730rpx;
-  margin: 0 auto;
-  /* background: yellow; */
-}
-
-.project-item-img {
-  width: 220rpx;
-  height: 180rpx;
-  margin: 20rpx 0;
-}
-
-.project-item-info {
-  display: flex;
-  flex-direction: column;
-  margin-left: 20rpx;
-  margin-top: 20rpx;
-  width: 490rpx;
-}
-
-.project-item-title {
-  font-size: 28rpx;
-}
-
-.project-item-super {
-  font-size: 20rpx;
-  margin-top: 10rpx;
-}
-
-.project-item-tag {
-  display: flex;
-  flex-direction: row;
-  margin-top: 10rpx;
-}
-
-.project-item-tagItem {
-  border: 1rpx solid #ddd;
-  font-size: 20rpx;
-  padding: 5rpx 10rpx;
-  margin-right: 10rpx;
-}
-
-.project-item-price-apply-num {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 15rpx;
-}
-
-.project-item-price {
-  color: rgba(175, 42, 48, 1);
-  font-size: 28rpx;
-  vertical-align: middle;
-}
-
-.project-item-apply-num {
-  color: rgba(16, 16, 16, 1);
-  font-size: 20rpx;
-  vertical-align: middle;
-  padding-top: 8rpx;
-}
-
-/* project item template style*/
 
 .tips-container {
   background-color: #fff;
