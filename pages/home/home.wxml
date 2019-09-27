@@ -11,8 +11,6 @@
   <!-- 轮播 -->
 
   <swiperImg  bind:changeCurrent="onBannerSwiperTap" swiperBannerData="{{swiperData}}"/>
-
-
   
   <!-- 轮播 -->
 

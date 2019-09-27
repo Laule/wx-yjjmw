@@ -9,8 +9,6 @@ Page({
         id: 1,
         imgUrl: 'http://attachment4.jmw.com.cn/image/2019/07/22/15637780008142.jpg!m-w640h330',
         desc: ''
-
-
       }, {
         id: 2,
         imgUrl: 'http://attachment4.jmw.com.cn/image/2019/09/24/15693163934541.jpg!m-w640h330',
