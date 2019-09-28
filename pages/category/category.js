@@ -7,11 +7,13 @@ Page({
     currentMenuIndex: '',
     curIndex: 0,
     windowHeight: '',
-    categoryTypeArr: []
+    categoryTypeArr: [],
+    currentCategoryInfo: ''
   },
 
   onLoad: function(options) {
     this._loadData();
+
   },
 
   // 加载所有数据
@@ -32,10 +34,12 @@ Page({
           childCategory: data,
           topImgUrl: categoryData[0].img.url,
           nextTitle: categoryData[1].name,
-          nextId: categoryData[1].id
+          nextId: categoryData[1].id,
+          curIndex: 1
         };
         that.setData({
-          categoryInfo0
+          categoryInfo0,
+          currentCategoryInfo: categoryInfo0
         });
         callback && callback();
       });
@@ -43,10 +47,11 @@ Page({
   },
 
 
-  onCategorySwitchTap: function(e) {
+  onCategorySwitchTap: function(e, nextId, nextIndex) {
+
     console.log(e);
-    let id = e.target.dataset.id,
-      index = e.target.dataset.index;
+    let id = e ? e.target.dataset.id : nextId,
+      index = e ? e.target.dataset.index : nextIndex;
     this.setData({
       currentMenuIndex: id,
       curIndex: index
@@ -56,11 +61,13 @@ Page({
     if (!this.isLoadedData(index)) {
       var that = this;
       category.getCategoryByChild(id, (data) => {
-        console.log(data);
         that.getDataObjForBind(index, data);
       });
+    } else {
+      this.setData({
+        currentCategoryInfo: this.data['categoryInfo' + index]
+      });
     }
-
   },
 
   isLoadedData: function(index) {
@@ -71,7 +78,6 @@ Page({
   },
 
   getDataObjForBind: function(index, data) {
-
     let obj = {},
       categoryTypeArr = this.data.categoryTypeArr,
       baseData = categoryTypeArr[index],
@@ -81,11 +87,20 @@ Page({
       childCategory: data,
       topImgUrl: baseData.img.url,
       nextTitle: nextBaseData ? nextBaseData.name : '',
-      nextId: nextBaseData ? nextBaseData.id : ''
+      nextId: nextBaseData ? nextBaseData.id : '',
+      curIndex: index + 1
     };
+    obj['currentCategoryInfo'] = obj['categoryInfo' + index];
     this.setData(obj);
   },
-
+  loadmore: function(e) {
+    console.log(e);
+    let nextId = e.target.dataset.nextid;
+    let nextIndex = e.target.dataset.nextindex;
+    console.log(nextId, nextIndex);
+    this.onCategorySwitchTap(null, nextId, nextIndex)
+    console.log('加载更多');
+  },
   onCategorySearchTap: function() {
     console.log('跳转到搜索页面');
   },

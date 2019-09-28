@@ -19,10 +19,10 @@
     </scroll-view>
 
     <!--右侧栏-->
-    <scroll-view class="right-box" scroll-y="true" style="height:{{windowHeight -46}}px;" bindscrolltolower="loadmore">
+    <scroll-view class="right-box" scroll-y="true" style="height:{{windowHeight -46}}px;" data-nextId="{{currentCategoryInfo.nextId}}" data-nextIndex="{{currentCategoryInfo.curIndex}}" bindscrolltolower="loadmore" lower-threshold="10">
       <view class="category-detail-box">
         <view class="category-detail-special">
-          <image mode="aspectFill" src="http://attachment4.jmw.com.cn/image/2019/09/24/15693163493154.jpg!m-w640h330"></image>
+          <image mode="aspectFill" src="{{currentCategoryInfo.topImgUrl}}"></image>
         </view>
         <view class="category-detail-content">
           <view class="category-detail-header">
@@ -30,124 +30,17 @@
             <view class="rank">排行榜</view>
           </view>
           <view class="category-detail-main">
-
-            <view class="category-detail-item">
+          <block wx:for="{{currentCategoryInfo.childCategory}}" wx:key>
+            <view class="category-detail-item" data-id="{{item.id}}">
               <image src=""></image>
-              <text>{{categoryInfo.nextTitle}}</text>
+              <text>{{item.name}}</text>
             </view>
-            <view class="category-detail-item">
-              <image src=""></image>
-              <text>火锅</text>
-            </view>
-            <view class="category-detail-item">
-              <image src=""></image>
-              <text>火锅</text>
-            </view>
-            <view class="category-detail-item">
-              <image src=""></image>
-              <text>火锅</text>
-            </view>
-            <view class="category-detail-item">
-              <image src=""></image>
-              <text>火锅</text>
-            </view>
-            <view class="category-detail-item">
-              <image src=""></image>
-              <text>火锅</text>
-            </view>
-            <view class="category-detail-item">
-              <image src=""></image>
-              <text>火锅</text>
-            </view>
-            <view class="category-detail-item">
-              <image src=""></image>
-              <text>火锅</text>
-            </view>
-            <view class="category-detail-item">
-              <image src=""></image>
-              <text>火锅</text>
-            </view>
-            <view class="category-detail-item">
-              <image src=""></image>
-              <text>火锅</text>
-            </view>
-            <view class="category-detail-item">
-              <image src=""></image>
-              <text>火锅</text>
-            </view>
-            <view class="category-detail-item">
-              <image src=""></image>
-              <text>火锅</text>
-            </view>
-            <view class="category-detail-item">
-              <image src=""></image>
-              <text>火锅</text>
-            </view>
-            <view class="category-detail-item">
-              <image src=""></image>
-              <text>火锅</text>
-            </view>
-            <view class="category-detail-item">
-              <image src=""></image>
-              <text>火锅</text>
-            </view>
-            <view class="category-detail-item">
-              <image src=""></image>
-              <text>火锅</text>
-            </view>
-            <view class="category-detail-item">
-              <image src=""></image>
-              <text>火锅</text>
-            </view>
-            <view class="category-detail-item">
-              <image src=""></image>
-              <text>火锅</text>
-            </view>
-            <view class="category-detail-item">
-              <image src=""></image>
-              <text>火锅</text>
-            </view>
-            <view class="category-detail-item">
-              <image src=""></image>
-              <text>火锅</text>
-            </view>
-            <view class="category-detail-item">
-              <image src=""></image>
-              <text>火锅</text>
-            </view>
-            <view class="category-detail-item">
-              <image src=""></image>
-              <text>火锅</text>
-            </view>
-            <view class="category-detail-item">
-              <image src=""></image>
-              <text>火锅</text>
-            </view>
-            <view class="category-detail-item">
-              <image src=""></image>
-              <text>火锅</text>
-            </view>
-            <view class="category-detail-item">
-              <image src=""></image>
-              <text>火锅</text>
-            </view>
-            <view class="category-detail-item">
-              <image src=""></image>
-              <text>火锅</text>
-            </view>
-            <view class="category-detail-item">
-              <image src=""></image>
-              <text>火锅</text>
-            </view>
-            <view class="category-detail-item">
-              <image src=""></image>
-              <text>火锅</text>
-            </view>
+            </block>
           </view>
 
         </view>
         <!--如果无数据，则显示数据-->
-        <!-- <view class="nodata_text">上拉继续浏览 母婴用品</view> -->
+        <view class="nodata_text" style="height:50px">上拉继续浏览 母婴用品</view>
       </view>
     </scroll-view>
   </view>
