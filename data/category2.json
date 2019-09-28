@@ -1,0 +1,40 @@
+[
+    {
+        "id": 2,
+        "name": "婴儿游泳",
+        "main_img_url": "/product-dryfruit@1.png",
+        "img_id": 10
+    },
+    {
+        "id": 5,
+        "name": "儿童乐园",
+        "price": "0.01",
+        "stock": 995,
+        "main_img_url": "/product-dryfruit@2.png",
+        "img_id": 33
+    },
+    {
+        "id": 8,
+        "name": "母婴用品",
+        "price": "0.01",
+        "stock": 995,
+        "main_img_url": "/product-dryfruit@3.png",
+        "img_id": 36
+    },
+    {
+        "id": 9,
+        "name": "儿童玩具",
+        "price": "0.01",
+        "stock": 996,
+        "main_img_url": "/product-dryfruit@4.png",
+        "img_id": 37
+    },
+    {
+        "id": 10,
+        "name": "儿童手工",
+        "price": "0.01",
+        "stock": 996,
+        "main_img_url": "/product-dryfruit@5.png",
+        "img_id": 38
+    }
+]

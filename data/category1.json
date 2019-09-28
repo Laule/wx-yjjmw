@@ -1,0 +1,247 @@
+[
+  {
+    "id": 2,
+    "name": "火锅",
+    "main_img_url": "https://www.3158.cn/corpname/qimei/144x144_logo.png"
+  },
+  {
+    "id": 5,
+    "name": "奶茶",
+    "main_img_url": "https://www.3158.cn/corpname/qimei/144x144_logo.png"
+  },
+  {
+    "id": 8,
+    "name": "炸鸡",
+    "main_img_url": "https://www.3158.cn/corpname/qimei/144x144_logo.png"
+  },
+  {
+    "id": 9,
+    "name": "西餐",
+    "main_img_url": "https://www.3158.cn/corpname/qimei/144x144_logo.png"
+  },
+  {
+    "id": 10,
+    "name": "韩国料理",
+    "main_img_url": "https://www.3158.cn/corpname/qimei/144x144_logo.png"
+  },
+  {
+    "id": 11,
+    "name": "面馆",
+    "main_img_url": "https://www.3158.cn/corpname/qimei/144x144_logo.png"
+  },
+  {
+    "id": 12,
+    "name": "冒菜",
+    "main_img_url": "/product-dryfruit@7.png"
+  },
+  {
+    "id": 26,
+    "name": "串串香",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 2216,
+    "name": "砂锅",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 2316,
+    "name": "甜品",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 24446,
+    "name": "米粉",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 2690,
+    "name": "米线",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 211223546,
+    "name": "小吃",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 912,
+    "name": "蛋糕",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 123,
+    "name": "快餐",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 124,
+    "name": "零食店",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 125,
+    "name": "烧烤",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 1267,
+    "name": "冰淇淋",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 127,
+    "name": "咖啡",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 178,
+    "name": "汉堡",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 179,
+    "name": "中餐",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 180,
+    "name": "贡茶",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 1812,
+    "name": "煲仔饭",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 200,
+    "name": "包子",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 201,
+    "name": "黄焖鸡米饭",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 202,
+    "name": "寿司",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 203,
+    "name": "烤鱼",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 304,
+    "name": "臭豆腐",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 305,
+    "name": "豆浆",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 306,
+    "name": "麻辣香锅",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 307,
+    "name": "麻辣烫",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 308,
+    "name": "焖锅",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 309,
+    "name": "日本料理",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 310,
+    "name": "新奇特",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 311,
+    "name": "牛排杯",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 312,
+    "name": "酸菜鱼",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 313,
+    "name": "鱼火锅",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 314,
+    "name": "饺子",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 315,
+    "name": "小龙虾",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 316,
+    "name": "蟹煲",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 317,
+    "name": "铁板烧",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 318,
+    "name": "花甲",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 319,
+    "name": "饭团",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 3210,
+    "name": "卤味",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 44112,
+    "name": "熟食",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 344122,
+    "name": "牛肉",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 3311221,
+    "name": "火锅海鲜",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 55623123,
+    "name": "茶餐厅",
+    "main_img_url": "/product-dryfruit@8.png"
+  },
+  {
+    "id": 2123145678,
+    "name": "铁板炒饭",
+    "main_img_url": "/product-dryfruit@8.png"
+  }
+]

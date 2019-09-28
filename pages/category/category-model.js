@@ -1,5 +1,6 @@
-
-import { Base } from '../../utils/base.js';
+import {
+  Base
+} from '../../utils/base.js';
 
 class Category extends Base {
   constructor() {
@@ -9,18 +10,18 @@ class Category extends Base {
   /*获得所有分类*/
   getCategoryType(callback) {
     var param = {
-      url: 'category/all',
-      sCallback: function (data) {
+      url: 'category.json',
+      sCallback: function(data) {
         callback && callback(data);
       }
     };
     this.request(param);
   }
-  /*获得某种分类的商品*/
-  getProductsByCategory(id, callback) {
+  /*获得某种分类的子类*/
+  getCategoryByChild(id, callback) {
     var param = {
-      url: 'product/by_category?id=' + id,
-      sCallback: function (data) {
+      url: 'category' + id + '.json',
+      sCallback: function(data) {
         callback && callback(data);
       }
     };
@@ -28,4 +29,6 @@ class Category extends Base {
   }
 }
 
-export { Category };
+export {
+  Category
+};

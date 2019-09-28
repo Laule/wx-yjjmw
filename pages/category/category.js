@@ -4,142 +4,90 @@ import {
 var category = new Category();
 Page({
   data: {
-    curNav: 1,
+    currentMenuIndex: '',
     curIndex: 0,
-    type_detail: 1,
-    list: [],
-    page: 1,
-    leftHeight: '',
-    rightHeight: '',
     windowHeight: '',
-    hidden: true,
-    tlist: [{
-        id: 1,
-        name: '餐饮'
-      },
-      {
-        id: 2,
-        name: '餐饮'
-      },
-      {
-        id: 3,
-        name: '餐饮'
-      },
-      {
-        id: 4,
-        name: '餐饮'
-      },
-      {
-        id: 5,
-        name: '餐饮'
-      },
-      {
-        id: 6,
-        name: '餐饮'
-      },
-      {
-        id: 7,
-        name: '餐饮'
-      },
-      {
-        id: 8,
-        name: '餐饮'
-      },
-      {
-        id: 9,
-        name: '餐饮'
-      },
-      {
-        id: 10,
-        name: '餐饮'
-      },
-      {
-        id: 11,
-        name: '餐饮'
-      },
-      {
-        id: 12,
-        name: '餐饮'
-      },
-      {
-        id: 13,
-        name: '餐饮'
-      },
-      {
-        id: 14,
-        name: '餐饮'
-      },
-      {
-        id: 15,
-        name: '餐饮'
-      },
-      {
-        id: 16,
-        name: '餐饮'
-      }
-    ]
+    categoryTypeArr: []
+  },
+
+  onLoad: function(options) {
+    this._loadData();
+  },
+
+  // 加载所有数据
+  _loadData: function(callback) {
+    let that = this,
+      _windowHeight;
+    _windowHeight = wx.getSystemInfoSync().windowHeight;
+    that.setData({
+      windowHeight: _windowHeight
+    });
+    category.getCategoryType((categoryData) => {
+      that.setData({
+        currentMenuIndex: categoryData[0].id,
+        categoryTypeArr: categoryData
+      });
+      category.getCategoryByChild(categoryData[0].id, (data) => {
+        let categoryInfo0 = {
+          childCategory: data,
+          topImgUrl: categoryData[0].img.url,
+          nextTitle: categoryData[1].name,
+          nextId: categoryData[1].id
+        };
+        that.setData({
+          categoryInfo0
+        });
+        callback && callback();
+      });
+    });
   },
 
 
-
-  /*切换分类*/
-  changeCategory: function(event) {
-    var index = category.getDataSet(event, 'index'),
-      id = category.getDataSet(event, 'id') //获取data-set
+  onCategorySwitchTap: function(e) {
+    console.log(e);
+    let id = e.target.dataset.id,
+      index = e.target.dataset.index;
     this.setData({
-      currentMenuIndex: index
+      currentMenuIndex: id,
+      curIndex: index
     });
 
-
-  },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function(options) {
-    var _windowHeight = wx.getSystemInfoSync().windowHeight;
-    var _leftHeight = this.data.tlist.length * 50;
-    this.setData({
-      curNav: 1,
-      leftHeight: _leftHeight <= _windowHeight - 40 ? _windowHeight - 40 : _leftHeight,
-      windowHeight: _windowHeight
-    })
-    this.switchRightTab();
-  },
-  //事件处理函数  
-  switchRightTab: function(e) {
-    // 获取item项的id，和数组的下标值  
-    let id = e ? e.currentTarget.dataset.id : this.data.tlist[0].firstType.id,
-      index = e ? parseInt(e.currentTarget.dataset.index) : 0,
-      _length = this.data.tlist[index].second.length;
-    // 把点击到的某一项，设为当前index  
-    this.setData({
-      curNav: id,
-      curIndex: index,
-      hidden: true
-    })
-    if (!_length) {
-      this.getTypeDetail(e ? e : '');
-      this.setData({
-        type_detail: 2
-      })
-    } else {
-      var _height = (Math.ceil(_length / 3) * 160 + 28) / (750 / wx.getSystemInfoSync().windowWidth);
-      this.setData({
-        type_detail: 1,
-        rightHeight: _height <= this.data.windowHeight - 40 ? this.data.windowHeight - 28 / (750 / wx.getSystemInfoSync().windowWidth) - 40 : _height
-      })
+    //判断是否第一次加载
+    if (!this.isLoadedData(index)) {
+      var that = this;
+      category.getCategoryByChild(id, (data) => {
+        console.log(data);
+        that.getDataObjForBind(index, data);
+      });
     }
+
   },
-  getTypeDetail(e) {
-    var self = this;
-    var _page = self.data.page;
-    let id = e ? e.currentTarget.dataset.id : this.data.tlist[0].firstType.id;
-    this.setData({
-      page: 1,
-      list: []
-    })
-    self.getList(id);
+
+  isLoadedData: function(index) {
+    if (this.data['categoryInfo' + index]) {
+      return true;
+    }
+    return false;
+  },
+
+  getDataObjForBind: function(index, data) {
+
+    let obj = {},
+      categoryTypeArr = this.data.categoryTypeArr,
+      baseData = categoryTypeArr[index],
+      nextBaseData = (categoryTypeArr.length - 1 === index) ? false : categoryTypeArr[index + 1];
+
+    obj['categoryInfo' + index] = {
+      childCategory: data,
+      topImgUrl: baseData.img.url,
+      nextTitle: nextBaseData ? nextBaseData.name : '',
+      nextId: nextBaseData ? nextBaseData.id : ''
+    };
+    this.setData(obj);
+  },
+
+  onCategorySearchTap: function() {
+    console.log('跳转到搜索页面');
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -173,6 +121,7 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function() {
+
 
   },
 
