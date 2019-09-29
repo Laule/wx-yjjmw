@@ -37,7 +37,6 @@
             </view>
             </block>
           </view>
-
         </view>
         <!--如果无数据，则显示数据-->
         <view class="nodata_text" style="height:50px">上拉继续浏览 母婴用品</view>

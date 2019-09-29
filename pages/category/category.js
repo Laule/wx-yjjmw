@@ -102,7 +102,9 @@ Page({
     console.log('加载更多');
   },
   onCategorySearchTap: function() {
-    console.log('跳转到搜索页面');
+    wx.navigateTo({
+      url: '/pages/search/search',
+    })
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

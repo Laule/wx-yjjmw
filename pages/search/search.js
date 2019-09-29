@@ -1,26 +1,40 @@
-// pages/business/business.js
+// pages/search/search.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    navUnfold: false
+    isClear: false,
+    inputVal: ''
   },
 
-
-  onNavBarTap: function() {
-    this.setData({
-      navUnfold: !this.data.navUnfold
-    })
-  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
 
   },
+  onClearTap: function(e) {
+    this.setData({
+      inputVal:'',
+      isClear: false
+    })
+  },
 
+  onListenInput: function(e) {
+    console.log(e);
+    let inputVal = e.detail.value;
+    if (e.detail.value) {
+      this.setData({
+        isClear: true
+      })
+    } else {
+      this.setData({
+        isClear: false
+      })
+    }
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

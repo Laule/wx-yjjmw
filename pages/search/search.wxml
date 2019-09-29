@@ -1,0 +1,70 @@
+<view class="container">
+  <view class="search-container">
+
+    <view class="search-box">
+      <view class="search-icon">
+        <icon type="search" size="16"></icon>
+      </view>
+
+      <input class="search-input" bindinput="onListenInput" value="{{inputVal}}" type="text" placeholder="搜索项目"></input>
+
+      <view wx:if="{{isClear}}" class="clear-icon" bindtap="onClearTap">
+        <icon type="clear" size="16"></icon>
+      </view>
+    </view>
+
+    <view class="search-btn">搜索</view>
+
+  </view>
+
+  <view class="history-search">
+    <view class="search-header">
+      <view class="title">历史搜索</view>
+      <view class="delete">
+        <icon type="clear" size="16"></icon>
+      </view>
+
+    </view>
+
+    <view class="search-content">
+      <view class="search-item">
+        一点点
+      </view>
+    </view>
+
+  </view>
+
+  <view class="hot-search">
+
+    <view class="search-header">
+      <view class="title">热门搜索</view>
+    </view>
+
+    <view class="search-content">
+      <view class="search-item">
+        正新鸡排
+      </view>
+      <view class="search-item">
+        正新鸡排
+      </view>
+      <view class="search-item">
+        正新鸡排
+      </view>
+      <view class="search-item">
+        正新鸡排
+      </view>
+      <view class="search-item">
+        正新鸡排
+      </view>
+      <view class="search-item active">
+        无印良品
+      </view>
+      <view class="search-item">
+        正新鸡排
+      </view>
+      <view class="search-item">
+        正新鸡排
+      </view>
+    </view>
+  </view>
+</view>

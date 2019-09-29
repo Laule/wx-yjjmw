@@ -3,7 +3,7 @@
   <!-- 搜索 -->
   <view class="search-container">
     <icon type="search" size="13" color="#ffffff" class="search-img"></icon>
-    <input class="search-input" placeholder="请输入关键词" placeholder-class="search-placeholder"></input>
+    <input disabled class="search-input" placeholder="请输入关键词" placeholder-class="search-placeholder" bindtap="onSearchTap"></input>
     <text class="search-text">搜索</text>
   </view>
   <!-- 搜索 -->

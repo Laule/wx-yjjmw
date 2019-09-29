@@ -1,0 +1,88 @@
+.search-container {
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  flex-direction: row;
+}
+
+.search-box {
+  background-color: #f8f8f8;
+  width: 660rpx;
+  height: 60rpx;
+  display: flex;
+  flex-direction: row;
+  margin: 15rpx auto 15rpx 10rpx;
+}
+
+.search-icon {
+  width: 70rpx;
+  line-height: 60rpx;
+  text-align: center;
+}
+
+.search-input {
+  height: 60rpx;
+  width: 520rpx;
+}
+
+.clear-icon {
+  line-height: 60rpx;
+  text-align: center;
+  width: 70rpx;
+}
+
+.search-btn {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 28rpx;
+  text-align: center;
+  width: 90rpx;
+  margin-top: 15rpx;
+}
+
+.history-search {
+  margin-top: 20rpx;
+}
+
+.search-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.search-header .title {
+  position: relative;
+  left: 20rpx;
+}
+
+.search-header .title::before {
+  content: '';
+  width: 8rpx;
+  height: 40rpx;
+  background-color: #af2a30;
+  position: absolute;
+  top: 0;
+  left: -20rpx;
+}
+
+.search-header .delete {
+  margin-right: 15rpx;
+}
+
+.search-content {
+  margin: 20rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.search-content .search-item {
+  background-color: #f8f8f8;
+  padding: 15rpx;
+  margin-right: 20rpx;
+  margin-bottom: 30rpx;
+}
+
+.active {
+  color: #af2a30;
+  font-weight: bold;
+}

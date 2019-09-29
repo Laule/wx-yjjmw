@@ -3,7 +3,8 @@
     "pages/home/home",
     "pages/category/category",
     "pages/business/business",
-    "pages/person/person"
+    "pages/person/person",
+    "pages/search/search"
   ],
   "window": {
     "backgroundTextStyle": "light",
