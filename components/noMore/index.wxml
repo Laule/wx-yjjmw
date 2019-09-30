@@ -1,0 +1,3 @@
+<view class="no-more-container">
+  <text class="no-more">{{noMoreTitle}}</text>
+</view>

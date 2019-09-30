@@ -8,28 +8,30 @@
 
       <input class="search-input" bindinput="onListenInput" value="{{inputVal}}" type="text" placeholder="搜索项目"></input>
 
-      <view wx:if="{{isClear}}" class="clear-icon" bindtap="onClearTap">
+      <view wx:if="{{isInputClear}}" class="clear-icon" bindtap="onClearTap">
         <icon type="clear" size="16"></icon>
       </view>
     </view>
 
-    <view class="search-btn">搜索</view>
+    <view class="search-btn" bindtap="onSearchTap">搜索</view>
 
   </view>
 
-  <view class="history-search">
+  <view wx-if="{{is_history_search}}" class="history-search">
     <view class="search-header">
       <view class="title">历史搜索</view>
-      <view class="delete">
+      <view class="delete" bindtap="onClearHistoryTap">
         <icon type="clear" size="16"></icon>
       </view>
 
     </view>
 
     <view class="search-content">
-      <view class="search-item">
-        一点点
-      </view>
+      <block wx:for="{{history_search_list}}" wx:key>
+        <view class="search-item" data-keyword="{{item.inputVal}}" bindtap="onHistoryTap">
+         {{item.shorthand}}
+        </view>
+      </block>
     </view>
 
   </view>

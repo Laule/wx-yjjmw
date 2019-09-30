@@ -1,0 +1,4 @@
+<import src='../../template/project-item/project-item-template.wxml' />
+<view class="container">
+<template is="project-item" />
+</view>

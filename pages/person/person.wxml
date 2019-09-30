@@ -1,2 +1,87 @@
-<!--pages/person/person.wxml-->
-<text>pages/person/person.wxml</text>
+<view class="container">
+  <view class="person-info">
+    <image class="avatar"></image>
+    <text class="name">NULL</text>
+    <text class="slogan">一将功成万骨枯</text>
+  </view>
+
+
+  <view class="cell-list-container" catchtap="onNavigateTap">
+
+    <view class="cell-list">
+      <view class="cell-item">
+        <view class="cell-item-icon">
+          <image src=""></image>
+        </view>
+        <view class="cell-item-solt" data-href="message">
+          <text>我的留言</text>
+          <image src=""></image>
+        </view>
+      </view>
+    </view>
+
+
+    <view class="cell-list m-t-10">
+
+
+      <view class="cell-item">
+        <view class="cell-item-icon">
+          <image src=""></image>
+        </view>
+        <view class="cell-item-solt bb-1-ddd" data-href="history">
+          <text>浏览记录</text>
+          <image src=""></image>
+        </view>
+      </view>
+
+      <view class="cell-item">
+        <view class="cell-item-icon">
+          <image src=""></image>
+        </view>
+        <view class="cell-item-solt bb-1-ddd" data-href="collect">
+          <text>我的收藏</text>
+          <image src=""></image>
+        </view>
+      </view>
+
+
+      <view class="cell-item">
+        <view class="cell-item-icon">
+          <image src=""></image>
+        </view>
+        <view class="cell-item-solt" data-href="cooperate">
+          <text>合作咨询</text>
+          <image src=""></image>
+        </view>
+      </view>
+    </view>
+
+
+    <view class="cell-list m-t-10">
+
+      <view class="cell-item">
+        <view class="cell-item-icon">
+          <image src=""></image>
+        </view>
+        <view class="cell-item-solt bb-1-ddd" data-href="feedback">
+          <text>意见反馈</text>
+          <image src=""></image>
+        </view>
+      </view>
+
+      <view class="cell-item">
+        <view class="cell-item-icon">
+          <image src=""></image>
+        </view>
+        <view class="cell-item-solt" data-href="about">
+          <text>关于我们</text>
+          <image src=""></image>
+        </view>
+      </view>
+
+    </view>
+
+  </view>
+
+
+</view>

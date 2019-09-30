@@ -1,0 +1,29 @@
+.no-more-container {
+  text-align: center;
+}
+
+.no-more {
+  position: relative;
+  font-size: 28rpx;
+  color: #666;
+}
+
+.no-more::before {
+  content: '';
+  position: absolute;
+  width: 80rpx;
+  height: 1px;
+  top: 20rpx;
+  left: -90rpx;
+  background-color: #bbb;
+}
+
+.no-more::after {
+  content: '';
+  position: absolute;
+  width: 80rpx;
+  height: 1px;
+  top: 20rpx;
+  right: -90rpx;
+  background-color: #bbb;
+}

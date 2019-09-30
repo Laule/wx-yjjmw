@@ -1,0 +1,74 @@
+<view class="container">
+
+
+  <view class="msg-card">
+    <view class="msg-card-header">
+      <text class="project-name">海风K12在线教育</text>
+      <text class="project-price">10-20万</text>
+    </view>
+
+    <view class="msg-body">
+      <view class="msg-body-box">
+        <text>姓名</text>
+        <text>张三</text>
+      </view>
+      <view class="msg-body-box">
+        <text>手机号码</text>
+        <text>18067781723</text>
+      </view>
+      <view class="msg-body-box">
+        <text>留言内容</text>
+        <text class="msg-content">我对该项目非常感兴趣，请与我联系！快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快！</text>
+      </view>
+    </view>
+
+
+  </view>
+
+  <view class="msg-card">
+    <view class="msg-card-header">
+      <text class="project-name">海风K12在线教育</text>
+      <text class="project-price">10-20万</text>
+    </view>
+
+    <view class="msg-body">
+      <view class="msg-body-box">
+        <text>姓名</text>
+        <text>张三</text>
+      </view>
+      <view class="msg-body-box">
+        <text>手机号码</text>
+        <text>18067781723</text>
+      </view>
+      <view class="msg-body-box">
+        <text>留言内容</text>
+        <text class="msg-content">我对该项目非常感兴趣，请与我联系！快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快！</text>
+      </view>
+    </view>
+
+
+  </view>
+
+  <view class="msg-card">
+    <view class="msg-card-header">
+      <text class="project-name">海风K12在线教育</text>
+      <text class="project-price">10-20万</text>
+    </view>
+
+    <view class="msg-body">
+      <view class="msg-body-box">
+        <text>姓名</text>
+        <text>张三</text>
+      </view>
+      <view class="msg-body-box">
+        <text>手机号码</text>
+        <text>18067781723</text>
+      </view>
+      <view class="msg-body-box">
+        <text>留言内容</text>
+        <text class="msg-content">我对该项目非常感兴趣，请与我联系！快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快！</text>
+      </view>
+    </view>
+  </view>
+</view>
+<noMore noMoreTitle="我也是有底线的" />

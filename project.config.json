@@ -72,6 +72,27 @@
 					"id": -1,
 					"name": "pages/business/business",
 					"pathName": "pages/business/business",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/person/person",
+					"pathName": "pages/person/person",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/person/message/message",
+					"pathName": "pages/person/message/message",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/person/collect/collect",
+					"pathName": "pages/person/collect/collect",
 					"scene": null
 				}
 			]

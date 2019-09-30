@@ -1,0 +1,19 @@
+<import src='../../template/project-item/project-item-template.wxml' />
+<import src='../../template/business-item/business-item-template.wxml' />
+<view class="container">
+  <view class="navBar" catchtap="onNavBarSwitch">
+    <view class="navBar-item  {{currentNavIndex == 1 ? 'active' : ''}}" data-id='1'>项目</view>
+    <view class="navBar-item {{currentNavIndex == 2 ? 'active' : ''}}" data-id='2'>商机</view>
+  </view>
+  <view class="content">
+    <view wx:if="{{currentNavIndex == 1}}" class="project">
+      <template is="project-item" />
+    </view>
+
+    <view wx:else class="business">
+      <block wx:for="{{[1, 2, 3, 4, 5]}}" wx:key>
+        <template is="{{item % 2 == 0 ? 'business-item-one' : 'business-item-three'}}" />
+      </block>
+    </view>
+  </view>
+</view>

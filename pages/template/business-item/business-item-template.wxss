@@ -1,0 +1,103 @@
+.business-item-one {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding: 10rpx 20rpx;
+}
+
+.business-one-info {
+  display: flex;
+  flex-direction: column;
+  width: 440rpx;
+}
+
+.business-tag-comment-date {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+}
+
+.business-tag {
+  background-color: #666;
+  color: #fff;
+  padding: 5rpx 15rpx;
+  font-size: 20rpx;
+  border-radius: 5rpx;
+  vertical-align: middle;
+}
+
+.business-comment {
+  margin-left: 35rpx;
+}
+
+.business-comment text {
+  font-size: 25rpx;
+  vertical-align: middle;
+  margin-left: 5rpx;
+}
+
+.business-date {
+  margin-left: 28rpx;
+}
+
+.business-date text {
+  font-size: 25rpx;
+  vertical-align: middle;
+  margin-left: 5rpx;
+}
+
+.business-tag-comment-date image {
+  width: 32rpx;
+  height: 32rpx;
+  background-color: #ddd;
+  vertical-align: middle;
+}
+
+.business-one-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 40rpx;
+  font-size: 30rpx;
+}
+
+.business-one-cover {
+  width: 260rpx;
+  height: 150rpx;
+  background-color: #ddd;
+}
+
+.business-item-three {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #ddd;
+  padding: 10rpx 20rpx;
+}
+
+.business-three-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 30rpx;
+}
+
+.business-three-img {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15rpx;
+}
+
+.business-three-img image {
+  width: 220rpx;
+  height: 160rpx;
+  background-color: #ddd;
+}
+
+.business-three-img image:not(:last-child) {
+  margin-right: 20rpx;
+}

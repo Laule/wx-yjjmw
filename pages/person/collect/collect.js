@@ -1,34 +1,19 @@
-// pages/business/business.js
+// pages/person/collect/collect.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    navUnfold: false,
-    currentIndex: 0,
-    navBarList: ["今日热议", "项目动态", "招商信息", "开店指导", "行业新闻", "防骗指南", "项目点评", "商机在线", "创业知识", "创业故事"]
+    currentNavIndex: 1
   },
 
-  /**
-   * 是否展开
-   */
-  onNavBarTap: function() {
-    this.setData({
-      navUnfold: !this.data.navUnfold
-    })
-  },
 
-  /**
-   * 切换Nav
-   */
-  onNavBarSwitchTap: function(event) {
-    let selectedIndex = event.currentTarget.dataset.index;
+  onNavBarSwitch: function(event) {
+    let currentNavIndex = event.target.dataset.id;
     this.setData({
-      currentIndex: selectedIndex,
-      navUnfold: false
+      currentNavIndex
     })
-    console.log(event);
   },
   /**
    * 生命周期函数--监听页面加载

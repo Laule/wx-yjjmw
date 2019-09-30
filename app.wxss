@@ -13,3 +13,10 @@
 .m-l-20 {
   margin-left: 20rpx;
 }
+.m-t-10{
+  margin-top: 10rpx;
+}
+.bb-1-ddd
+{
+  border-bottom: 1px solid #dddddd;
+}

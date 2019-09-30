@@ -1,1 +1,75 @@
-/* pages/person/person.wxss */
+page {
+  background-color: #f0f0f0;
+}
+
+.person-info {
+  height: 200rpx;
+  background-color: #af2a30;
+  position: relative;
+}
+
+.person-info .avatar {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 120rpx;
+  background-color: #ddd;
+  position: absolute;
+  top: 30rpx;
+  left: 35rpx;
+}
+
+.person-info .name {
+  color: #fff;
+  position: absolute;
+  top: 50rpx;
+  left: 180rpx;
+}
+
+.person-info .slogan {
+  position: absolute;
+  top: 100rpx;
+  left: 180rpx;
+  color: #fff;
+}
+
+.cell-list {
+  background-color: #fff;
+}
+
+.cell-item {
+  display: flex;
+  flex-direction: row;
+  height: 100rpx;
+}
+
+.cell-item-icon {
+  width: 70rpx;
+  text-align: center;
+}
+
+.cell-item-icon image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 30rpx;
+  background-color: #ddd;
+}
+
+.cell-item-solt {
+  width: 680rpx;
+  line-height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cell-item-solt text {
+  padding-left: 10rpx;
+}
+
+.cell-item-solt image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 30rpx;
+  margin-right: 10rpx;
+  background-color: #ddd;
+}

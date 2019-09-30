@@ -1,0 +1,46 @@
+<template name="business-item-one">
+  <view class="business-item-one">
+    <view class="business-one-info">
+      <text class="business-one-title">农民工居然靠这个能赚这么多钱，我们是不是应该学学？农民工居然靠这个能赚这么多钱，我们是不是应该学学？</text>
+      <view class="business-tag-comment-date">
+        <view class="business-tag">餐饮</view>
+        <view class="business-comment">
+          <image class="business-comment-img" src=""></image>
+          <text>2019</text>
+        </view>
+        <view class="business-date">
+          <image class="business-date-img" src=""></image>
+          <text>2019-09-19</text>
+        </view>
+      </view>
+    </view>
+    <image class="business-one-cover" src=""></image>
+  </view>
+</template>
+
+<template name="business-item-three">
+  <view class="business-item-three">
+    <view class="business-three-title">
+      如何在早教赛道初步形成，行业将如何进化？我们未来的 生活又该是怎么样?该如何生活？
+    </view>
+    <view class="business-three-img">
+      <image src=""></image>
+      <image src=""></image>
+      <image src=""></image>
+    </view>
+
+    <view class="business-tag-comment-date">
+      <view class="business-tag">
+        餐饮
+      </view>
+      <view class="business-comment">
+        <image class="business-comment-img" src=""></image>
+        <text>2019</text>
+      </view>
+      <view class="business-date">
+        <image class="business-date-img" src=""></image>
+        <text>2019-09-19</text>
+      </view>
+    </view>
+  </view>
+</template>

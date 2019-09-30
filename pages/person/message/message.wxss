@@ -1,0 +1,55 @@
+page {
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30rpx;
+}
+
+.msg-card {
+  width: 730rpx;
+  margin: 0 auto 15rpx auto;
+  border: 1px solid #ddd;
+  border-radius: 5rpx;
+  background-color: #fff;
+}
+
+.msg-card-header {
+  height: 60rpx;
+  line-height: 60rpx;
+  margin: 0 20rpx;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.project-name {
+  font-weight: 400;
+}
+
+.project-price {
+  color: #af2a30;
+}
+
+.msg-body {
+  margin: 10rpx 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.msg-body-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10rpx;
+}
+
+.msg-content {
+  width: 500rpx;
+  font-size: 24rpx;
+  line-height: 40rpx;
+}
+

@@ -1,0 +1,43 @@
+@import "../../template/project-item/project-item-template.wxss";
+@import "../../template/business-item/business-item-template.wxss";
+
+.navBar {
+  position: fixed;
+  top: 0;
+  left: 20rpx;
+  width: 710rpx;
+  height: 60rpx;
+  border-bottom: 1px solid #bbb;
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+}
+
+.container {
+  margin-top: 60rpx;
+}
+
+.navBar-item {
+  line-height: 60rpx;
+  width: 50%;
+  text-align: center;
+}
+
+.navBar-item.active {
+  color: #f00;
+  position: relative;
+  font-weight: bold;
+}
+
+.navBar-item.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  top: 61rpx;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 120rpx;
+  height: 2px;
+  background-color: #f00;
+}

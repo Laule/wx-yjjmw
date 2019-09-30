@@ -1,16 +1,11 @@
+<import src='../template/business-item/business-item-template.wxml' />
+
 <view class="container">
   <view class="navBar">
     <scroll-view scroll-x="true" class="navBar-slide-scroll">
-      <view class="navBar-item">今日热议</view>
-      <view class="navBar-item">项目动态</view>
-      <view class="navBar-item">招商信息</view>
-      <view class="navBar-item">开店指导</view>
-      <view class="navBar-item">行业新闻</view>
-      <view class="navBar-item">防骗指南</view>
-      <view class="navBar-item">项目点评</view>
-      <view class="navBar-item">商机在线</view>
-      <view class="navBar-item">创业知识</view>
-      <view class="navBar-item">创业故事</view>
+      <block wx:for="{{navBarList}}" wx:key>
+        <view class="navBar-item  {{currentIndex == index ? 'active' : ''}}" data-index="{{index}}" bindtap="onNavBarSwitchTap">{{item}}</view>
+      </block>
     </scroll-view>
     <view class="nav-more" catchtap="onNavBarTap">
       <icon type="download"></icon>
@@ -24,252 +19,17 @@
         </view>
 
         <view class="navBar-overall-content">
-          <view class="navBar-overall-item">今日热议</view>
-          <view class="navBar-overall-item">项目动态</view>
-          <view class="navBar-overall-item">招商信息</view>
-          <view class="navBar-overall-item">开店指导</view>
-          <view class="navBar-overall-item">行业新闻</view>
-          <view class="navBar-overall-item">防骗指南</view>
-          <view class="navBar-overall-item">项目点评</view>
-          <view class="navBar-overall-item">商机在线</view>
-          <view class="navBar-overall-item">创业知识</view>
-          <view class="navBar-overall-item">创业故事</view>
+          <block wx:for="{{navBarList}}" wx:key>
+            <view class="navBar-overall-item {{currentIndex == index ? 'active' : ''}}" data-index="{{index}}" bindtap="onNavBarSwitchTap">{{item}}</view>
+          </block>
         </view>
-
       </view>
-
     </view>
   </view>
 
   <view class="business-list">
-
-    <view class="business-item-one">
-
-      <view class="business-one-info">
-        <text class="business-one-title">农民工居然靠这个能赚这么多钱，我们是不是应该学学？农民工居然靠这个能赚这么多钱，我们是不是应该学学？</text>
-        <view class="business-tag-comment-date">
-          <view class="business-tag">餐饮</view>
-          <view class="business-comment">
-            <image class="business-comment-img" src=""></image>
-            <text>2019</text>
-          </view>
-          <view class="business-date">
-            <image class="business-date-img" src=""></image>
-            <text>2019-09-19</text>
-          </view>
-        </view>
-      </view>
-      <image class="business-one-cover" src=""></image>
-    </view>
-
-    <view class="business-item-three">
-      <view class="business-three-title">
-        如何在早教赛道初步形成，行业将如何进化？我们未来的 生活又该是怎么样?该如何生活？
-      </view>
-      <view class="business-three-img">
-        <image src=""></image>
-        <image src=""></image>
-        <image src=""></image>
-      </view>
-
-      <view class="business-tag-comment-date">
-        <view class="business-tag">
-          餐饮
-        </view>
-        <view class="business-comment">
-          <image class="business-comment-img" src=""></image>
-          <text>2019</text>
-        </view>
-        <view class="business-date">
-          <image class="business-date-img" src=""></image>
-          <text>2019-09-19</text>
-        </view>
-      </view>
-
-    </view>
-
-        <view class="business-item-one">
-
-      <view class="business-one-info">
-        <text class="business-one-title">农民工居然靠这个能赚这么多钱，我们是不是应该学学？农民工居然靠这个能赚这么多钱，我们是不是应该学学？</text>
-        <view class="business-tag-comment-date">
-          <view class="business-tag">餐饮</view>
-          <view class="business-comment">
-            <image class="business-comment-img" src=""></image>
-            <text>2019</text>
-          </view>
-          <view class="business-date">
-            <image class="business-date-img" src=""></image>
-            <text>2019-09-19</text>
-          </view>
-        </view>
-      </view>
-      <image class="business-one-cover" src=""></image>
-    </view>
-        <view class="business-item-one">
-
-      <view class="business-one-info">
-        <text class="business-one-title">农民工居然靠这个能赚这么多钱，我们是不是应该学学？农民工居然靠这个能赚这么多钱，我们是不是应该学学？</text>
-        <view class="business-tag-comment-date">
-          <view class="business-tag">餐饮</view>
-          <view class="business-comment">
-            <image class="business-comment-img" src=""></image>
-            <text>2019</text>
-          </view>
-          <view class="business-date">
-            <image class="business-date-img" src=""></image>
-            <text>2019-09-19</text>
-          </view>
-        </view>
-      </view>
-      <image class="business-one-cover" src=""></image>
-    </view>
-        <view class="business-item-one">
-
-      <view class="business-one-info">
-        <text class="business-one-title">农民工居然靠这个能赚这么多钱，我们是不是应该学学？农民工居然靠这个能赚这么多钱，我们是不是应该学学？</text>
-        <view class="business-tag-comment-date">
-          <view class="business-tag">餐饮</view>
-          <view class="business-comment">
-            <image class="business-comment-img" src=""></image>
-            <text>2019</text>
-          </view>
-          <view class="business-date">
-            <image class="business-date-img" src=""></image>
-            <text>2019-09-19</text>
-          </view>
-        </view>
-      </view>
-      <image class="business-one-cover" src=""></image>
-    </view>
-        <view class="business-item-one">
-
-      <view class="business-one-info">
-        <text class="business-one-title">农民工居然靠这个能赚这么多钱，我们是不是应该学学？农民工居然靠这个能赚这么多钱，我们是不是应该学学？</text>
-        <view class="business-tag-comment-date">
-          <view class="business-tag">餐饮</view>
-          <view class="business-comment">
-            <image class="business-comment-img" src=""></image>
-            <text>2019</text>
-          </view>
-          <view class="business-date">
-            <image class="business-date-img" src=""></image>
-            <text>2019-09-19</text>
-          </view>
-        </view>
-      </view>
-      <image class="business-one-cover" src=""></image>
-    </view>
-        <view class="business-item-one">
-
-      <view class="business-one-info">
-        <text class="business-one-title">农民工居然靠这个能赚这么多钱，我们是不是应该学学？农民工居然靠这个能赚这么多钱，我们是不是应该学学？</text>
-        <view class="business-tag-comment-date">
-          <view class="business-tag">餐饮</view>
-          <view class="business-comment">
-            <image class="business-comment-img" src=""></image>
-            <text>2019</text>
-          </view>
-          <view class="business-date">
-            <image class="business-date-img" src=""></image>
-            <text>2019-09-19</text>
-          </view>
-        </view>
-      </view>
-      <image class="business-one-cover" src=""></image>
-    </view>
-        <view class="business-item-one">
-
-      <view class="business-one-info">
-        <text class="business-one-title">农民工居然靠这个能赚这么多钱，我们是不是应该学学？农民工居然靠这个能赚这么多钱，我们是不是应该学学？</text>
-        <view class="business-tag-comment-date">
-          <view class="business-tag">餐饮</view>
-          <view class="business-comment">
-            <image class="business-comment-img" src=""></image>
-            <text>2019</text>
-          </view>
-          <view class="business-date">
-            <image class="business-date-img" src=""></image>
-            <text>2019-09-19</text>
-          </view>
-        </view>
-      </view>
-      <image class="business-one-cover" src=""></image>
-    </view>
-        <view class="business-item-one">
-
-      <view class="business-one-info">
-        <text class="business-one-title">农民工居然靠这个能赚这么多钱，我们是不是应该学学？农民工居然靠这个能赚这么多钱，我们是不是应该学学？</text>
-        <view class="business-tag-comment-date">
-          <view class="business-tag">餐饮</view>
-          <view class="business-comment">
-            <image class="business-comment-img" src=""></image>
-            <text>2019</text>
-          </view>
-          <view class="business-date">
-            <image class="business-date-img" src=""></image>
-            <text>2019-09-19</text>
-          </view>
-        </view>
-      </view>
-      <image class="business-one-cover" src=""></image>
-    </view>
-        <view class="business-item-one">
-
-      <view class="business-one-info">
-        <text class="business-one-title">农民工居然靠这个能赚这么多钱，我们是不是应该学学？农民工居然靠这个能赚这么多钱，我们是不是应该学学？</text>
-        <view class="business-tag-comment-date">
-          <view class="business-tag">餐饮</view>
-          <view class="business-comment">
-            <image class="business-comment-img" src=""></image>
-            <text>2019</text>
-          </view>
-          <view class="business-date">
-            <image class="business-date-img" src=""></image>
-            <text>2019-09-19</text>
-          </view>
-        </view>
-      </view>
-      <image class="business-one-cover" src=""></image>
-    </view>
-        <view class="business-item-one">
-
-      <view class="business-one-info">
-        <text class="business-one-title">农民工居然靠这个能赚这么多钱，我们是不是应该学学？农民工居然靠这个能赚这么多钱，我们是不是应该学学？</text>
-        <view class="business-tag-comment-date">
-          <view class="business-tag">餐饮</view>
-          <view class="business-comment">
-            <image class="business-comment-img" src=""></image>
-            <text>2019</text>
-          </view>
-          <view class="business-date">
-            <image class="business-date-img" src=""></image>
-            <text>2019-09-19</text>
-          </view>
-        </view>
-      </view>
-      <image class="business-one-cover" src=""></image>
-    </view>
-        <view class="business-item-one">
-
-      <view class="business-one-info">
-        <text class="business-one-title">农民工居然靠这个能赚这么多钱，我们是不是应该学学？农民工居然靠这个能赚这么多钱，我们是不是应该学学？</text>
-        <view class="business-tag-comment-date">
-          <view class="business-tag">餐饮</view>
-          <view class="business-comment">
-            <image class="business-comment-img" src=""></image>
-            <text>2019</text>
-          </view>
-          <view class="business-date">
-            <image class="business-date-img" src=""></image>
-            <text>2019-09-19</text>
-          </view>
-        </view>
-      </view>
-      <image class="business-one-cover" src=""></image>
-    </view>
-
+    <block wx:for="{{[1, 2, 3, 4, 5]}}" wx:key>
+      <template is="{{item % 2 == 0 ? 'business-item-one' : 'business-item-three'}}" />
+    </block>
   </view>
-
-
 </view>
