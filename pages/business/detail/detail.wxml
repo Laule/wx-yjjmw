@@ -1,0 +1,63 @@
+<import src='../../template/business-item/business-item-template.wxml' />
+<import src='../../template/comment-item/comment-item-template.wxml' />
+<view class="container">
+  <view class="article">
+    <view class="article-title">
+      如何正确加盟“小鹿茶”？到底是机会，还 是“坑”？
+    </view>
+    <view class="article-author-date">
+      <text class="article-author">源进加盟网</text>
+      <text class="article-date">2019-08-01</text>
+    </view>
+    <view class="article-content">
+      前段时间我们说“小鹿茶”没有店，属于没有验证过可行性的项目，跟加盟领域中的一些“快招”项目很像，所以我们不得不为创业者做出加盟“小鹿茶”的风险警示。 毕竟对于普通创业者来说抗风险能力还是较差的，一旦失败几乎血本无归。 今天我们就捋一捋“小鹿茶”没有验证的风险在哪里，以及如何正确的加盟“小鹿茶”。 注：我们强调的是风险，不是绝对的失败或成功。 01 瑞幸咖啡能作为“小鹿茶”成功的经验参考么？ 首先品类不一样，咖啡是外来文化产品，而茶饮是中国茶饮衍生的时尚饮品，文化不同，受众不同。 再说，如果瑞幸咖啡卖的像星巴克，我相信，瑞幸不一定会引入茶饮这个品类。
+      我们在国盛证券对瑞幸咖啡2019年半年报的研报中看到。
+      <image src=""></image>
+      瑞幸门店中饮品的日均单店的销量为267.0杯，而2018年同期为262.8杯，同比增长仅为1.6%。（这里面还包括了小鹿茶品类） 而且瑞幸2019第二季度的单店仍然是亏损的，亏损555.2元。 我们可以看到瑞幸门店的咖啡品类的增长已经步履维艰，而单店的营收依然亏损。所以到现在为止，瑞幸的经营模式尚不能完全定义为成功,而且并非同一个品类，它作为“小鹿茶”的成功经验是不是有些牵强呢？
+    </view>
+  </view>
+
+  <view class="comment">
+    <view class="comment-title">
+      热门评论
+    </view>
+
+    <view class="comment-list">
+      <template is="commentItem" />
+    </view>
+
+    <view class="more-comment-btn">更多评论</view>
+
+  </view>
+
+  <view class="recommend">
+    <view class="recommend-title">相关推荐</view>
+    <view class="recommend-content">
+      <template is="business-item-one" />
+      <template is="business-item-one" />
+      <template is="business-item-one" />
+      <template is="business-item-one" />
+      <template is="business-item-one" />
+    </view>
+
+  </view>
+
+  <view class="navBar">
+    <view class="navBar-item">
+      <image class="navBar-icon" src=""></image>
+      <text class="navBar-text">评论</text>
+    </view>
+    <view class="navBar-item">
+      <image class="navBar-icon" src=""></image>
+      <text class="navBar-text">收藏</text>
+    </view>
+    <view class="navBar-item">
+      <image class="navBar-icon" src=""></image>
+      <text class="navBar-text">分享</text>
+    </view>
+    <view class="navBar-item">
+      <image class="navBar-icon" src=""></image>
+      <text class="navBar-text">获取开店方案</text>
+    </view>
+  </view>
+</view>

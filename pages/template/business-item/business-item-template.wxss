@@ -2,8 +2,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-bottom: 1px solid #ddd;
   padding: 10rpx 20rpx;
+}
+
+.business-item-one:not(:last-child) {
+  border-bottom: 1px solid #ddd;
 }
 
 .business-one-info {
@@ -73,8 +76,11 @@
 .business-item-three {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid #ddd;
   padding: 10rpx 20rpx;
+}
+
+.business-item-three:not(:last-child) {
+  border-bottom: 1px solid #ddd;
 }
 
 .business-three-title {

@@ -1,0 +1,6 @@
+<view class="container">
+   <image class="logo" src=""></image>
+   <text class="version">版本号：1.0.0</text>
+   <view class="protocol">服务协议</view>
+   <text class="company">杭州源进科技有限公司 版权所有</text>
+</view>

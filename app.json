@@ -7,7 +7,12 @@
     "pages/search/search",
     "pages/person/message/message",
     "pages/person/history/history",
-    "pages/person/collect/collect"
+    "pages/person/collect/collect",
+    "pages/person/cooperate/cooperate",
+    "pages/person/feedback/feedback",
+    "pages/person/about/about",
+    "pages/business/detail/detail",
+    "pages/business/comment/comment"
   ],
   "window": {
     "backgroundTextStyle": "light",

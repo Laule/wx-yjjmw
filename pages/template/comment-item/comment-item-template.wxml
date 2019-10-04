@@ -1,0 +1,22 @@
+<template name="commentItem">
+  <view class="comment-item-container">
+    <image class="comment-user-avatar" src=""></image>
+
+    <view class="comment-info">
+      <view class="comment-user-name-like">
+        <view class="comment-user-name">97841用户</view>
+        <view class="comment-like">
+          <image class="comment-like-icon" src=""></image>9
+        </view>
+      </view>
+      <view class="comment-date-address">
+        <view class="comment-date">9-25</view>
+        <view class="comment-address">河南信阳</view>
+      </view>
+      <view class="comment-content">
+        烧钱模式不是什么人都玩得起的呀！ 烧钱模式不是什么人都玩得起的呀！ 烧钱模式不是什么人都玩得起的呀！
+      </view>
+    </view>
+  </view>
+
+</template>

@@ -1,0 +1,26 @@
+@import "../../template/comment-item/comment-item-template.wxss";
+
+page {
+  /* background-color: #f0f0f0; */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotComment-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 28rpx;
+}
+
+.newComment {
+  margin-top: 30rpx;
+}
+
+.newComment-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 28rpx;
+}

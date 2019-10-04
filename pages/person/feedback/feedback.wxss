@@ -1,0 +1,24 @@
+page
+{
+  background-color: #f0f0f0;
+}
+.container{
+  margin: 20rpx;
+}
+
+.section-title{
+  color: #666;
+  font-size: 28rpx;
+}
+
+.text-box{
+  height: 300rpx;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 1px;
+  margin-top: 10rpx;
+}
+
+.fb-btn{
+  margin-top: 20rpx;
+}

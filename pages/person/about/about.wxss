@@ -1,0 +1,41 @@
+page {
+  background-color: #f0f0f0;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+
+.container .logo {
+  width: 220rpx;
+  height: 160rpx;
+  border-radius: 10rpx;
+  background-color: #ddd;
+  margin-top: 110rpx;
+}
+
+.container .version {
+  margin-top: 10rpx;
+}
+
+.container .protocol {
+  border: 1px solid #bbb;
+  border-radius: 10rpx;
+  background-color: #fff;
+  width: 200rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  position: absolute;
+  bottom: 120rpx;
+}
+
+.company {
+  position: absolute;
+  bottom: 50rpx;
+}

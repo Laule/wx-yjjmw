@@ -1,0 +1,28 @@
+page{
+  background-color: #f0f0f0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.c-block {
+  width: 700rpx;
+  height: 280rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  border: 1px solid #ddd;
+  margin-bottom: 40rpx;
+}
+
+.c-block:first-child
+{
+  margin-top: 40rpx;
+}
+
+.c-block image {
+  width: 120rpx;
+  height: 120rpx;
+  background-color: #ddd;
+}

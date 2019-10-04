@@ -30,6 +30,14 @@ Page({
     })
     console.log(event);
   },
+
+  onBusinessTap:function(event)
+  {
+    console.log('点击');
+    wx.navigateTo({
+      url: './detail/detail',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

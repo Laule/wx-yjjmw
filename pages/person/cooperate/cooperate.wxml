@@ -1,0 +1,25 @@
+<view class="container">
+  
+  <view class="c-block">
+    <text>源进加盟网</text>
+    <text>500万创业者的选择</text>
+    <text>实现您的招商/加盟梦想</text>
+  </view>
+
+  <view class="c-block">
+    <text>加盟管家 0577-64675005</text>
+    <text>1对1管家服务 ·品牌咨询·品牌推荐</text>
+  </view>
+
+  <view class="c-block">
+   <text>广告投放 0577-64675005</text>
+   <text>广告投放咨询·品牌入驻·品牌认证</text>
+  </view>
+
+  <view class="c-block">
+   <image src=""></image>
+   <text>关注我们：源进加盟网</text>
+   <text>量身定制您的创业需求</text>
+   <text>点击图片长按保存二维码识别</text>
+  </view>
+</view>

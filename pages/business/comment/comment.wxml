@@ -1,0 +1,17 @@
+<import src='../../template/comment-item/comment-item-template.wxml' />
+<view class="container">
+  <view class="hotComment">
+    <view class="hotComment-title">热门评论</view>
+    <template is="commentItem" />
+    
+  </view>
+
+  <view class="newComment">
+    <view class="newComment-title">最新评论</view>
+    <template is="commentItem" />
+  </view>
+
+  <view class="reply-NavBar">
+
+  </view>
+</view>

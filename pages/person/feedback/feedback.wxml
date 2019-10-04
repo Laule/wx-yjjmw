@@ -1,0 +1,10 @@
+<view class="container">
+  <view>
+
+    <label class="section-title">请输入您的意见或建议</label>
+    <textarea class="text-box" bindblur="bindTextAreaBlur" placeholder="" />
+
+    <button class="fb-btn" type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="primary">提交</button>
+
+  </view>
+</view>

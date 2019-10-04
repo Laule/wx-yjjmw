@@ -93,6 +93,35 @@
 					"id": -1,
 					"name": "pages/person/collect/collect",
 					"pathName": "pages/person/collect/collect",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/person/feedback/feedback",
+					"pathName": "pages/person/feedback/feedback",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/person/about/about",
+					"pathName": "pages/person/about/about",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 8,
+					"name": "pages/business/comment/comment",
+					"pathName": "pages/business/comment/comment",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/business/detail/detail",
+					"pathName": "pages/business/detail/detail",
+					"query": "",
 					"scene": null
 				}
 			]
