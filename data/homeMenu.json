@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "餐饮",
+    "img_url": "http://m.jmw.com.cn/images/new_icon/cy.png",
+    "sort": 1
+  },
+  {
+    "id": 2,
+    "name": "母婴",
+    "img_url": "http://m.jmw.com.cn/images/new_icon/zj.png",
+    "sort": 2
+  },
+  {
+    "id": 3,
+    "name": "零售",
+    "img_url": "http://m.jmw.com.cn/images/new_icon/ls.png",
+    "sort": 3
+  },
+  {
+    "id": 4,
+    "name": "服装",
+    "img_url": "http://m.jmw.com.cn/images/new_icon/fz.png",
+    "sort": 4
+  },
+  {
+    "id": 5,
+    "name": "教育",
+    "img_url": "http://m.jmw.com.cn/images/new_icon/jy.png",
+    "sort": 5
+  },
+  {
+    "id": 6,
+    "name": "建材",
+    "img_url": "http://m.jmw.com.cn/images/new_icon/jc.png",
+    "sort": 6
+  },
+  {
+    "id": 7,
+    "name": "服务",
+    "img_url": "http://m.jmw.com.cn/images/new_icon/qn.png",
+    "sort": 7
+  },
+  {
+    "id": 8,
+    "name": "游乐",
+    "img_url": "http://m.jmw.com.cn/images/new_icon/yey.png",
+    "sort": 8
+  },
+  {
+    "id": 9,
+    "name": "珠宝",
+    "img_url": "http://m.jmw.com.cn/images/new_icon/zb.png",
+    "sort": 9
+  },
+  {
+    "id": 10,
+    "name": "更多",
+    "img_url": "http://m.jmw.com.cn/images/new_icon/jx.png",
+    "sort": 10
+  }
+]

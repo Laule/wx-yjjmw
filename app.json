@@ -15,7 +15,7 @@
     "pages/business/comment/comment",
     "pages/project/project",
     "pages/project/get/get",
-    "pages/toppic/toppic",
+    "pages/theme/theme",
     "pages/project-list/project-list"
   ],
   "window": {

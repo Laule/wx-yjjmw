@@ -1,5 +1,5 @@
 <import src='../template/project-item/project-item-template.wxml' />
-<view>
+<view class="container">
   <!-- 搜索 -->
   <view class="search-container">
     <icon type="search" size="13" color="#ffffff" class="search-img"></icon>
@@ -9,57 +9,22 @@
   <!-- 搜索 -->
 
   <!-- 轮播 -->
-
-  <swiperImg  bind:changeCurrent="onBannerSwiperTap" swiperBannerData="{{swiperData}}"/>
-  
+  <swiperImg bind:changeCurrent="onBannerSwiperTap" swiperBannerData="{{swiperBannerData}}" />
   <!-- 轮播 -->
 
   <!-- 菜单  -->
   <view class="menu-container">
     <view class="menu-container-box">
-      <view class="menu-item" bindtap="onProjectTap">
-        <image src="http://m.jmw.com.cn/images/new_icon/cy.png"></image>
-        <text>餐饮</text>
-      </view>
-      <view class="menu-item">
-        <image src="http://m.jmw.com.cn/images/new_icon/zj.png"></image>
-        <text>母婴</text>
-      </view>
-      <view class="menu-item">
-        <image src="http://m.jmw.com.cn/images/new_icon/ls.png"></image>
-        <text>零售</text>
-      </view>
-      <view class="menu-item">
-        <image src="http://m.jmw.com.cn/images/new_icon/fz.png"></image>
-        <text>服装</text>
-      </view>
-      <view class="menu-item">
-        <image src="http://m.jmw.com.cn/images/new_icon/jy.png"></image>
-        <text>教育</text>
-      </view>
-      <view class="menu-item">
-        <image src="http://m.jmw.com.cn/images/new_icon/jc.png"></image>
-        <text>建材</text>
-      </view>
-      <view class="menu-item">
-        <image src="http://m.jmw.com.cn/images/new_icon/qn.png"></image>
-        <text>服务</text>
-      </view>
-      <view class="menu-item">
-        <image src="http://m.jmw.com.cn/images/new_icon/yey.png"></image>
-        <text>游乐</text>
-      </view>
-      <view class="menu-item">
-        <image src="http://m.jmw.com.cn/images/new_icon/zb.png"></image>
-        <text>珠宝</text>
-      </view>
-      <view class="menu-item">
-        <image src="http://m.jmw.com.cn/images/new_icon/jx.png"></image>
-        <text>更多</text>
-      </view>
+      <block wx:for="{{menuData}}" wx:key>
+        <view class="menu-item" bindtap="onProjectTap">
+          <image src="{{item.img_url}}"></image>
+          <text>{{item.name}}</text>
+        </view>
+      </block>
     </view>
   </view>
   <!-- 菜单-->
+  
 
   <!-- 头条 -->
   <view class="info-container">
@@ -124,7 +89,7 @@
 
   <!-- 专题 -->
   <!-- 自定义组件 -->
-  <slidePattern bind:changeCurrent="onSlidePatternTap" slidePatternTitle="精选专题" slidePatternData="{{topPicData}}"></slidePattern>
+  <slidePattern bind:changeCurrent="onSlidePatternTap" slidePatternTitle="精选专题" slidePatternData="{{themeData}}"></slidePattern>
   <!-- 专题 -->
 
   <!-- 热门行业 -->
