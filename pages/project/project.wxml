@@ -1,0 +1,143 @@
+<view class="container">
+  <swiperImg bind:changeCurrent="onBannerSwiperTap" swiperBannerData="{{swiperData}}" />
+
+  <view class="project-info">
+    <view class="project-info-left">
+      <text class="project-name">编程猫少儿编程 60家加盟店  店面设计支持</text>
+      <view class="project-tag">
+        <text>实地考察选址</text>
+        <text>装修指导</text>
+        <text>行业背景分析</text>
+        <text>行业背景分析</text>
+        <text>标准化运营手册</text>
+        <text>区域保护支持</text>
+        <text>总部短期培训</text>
+      </view>
+      <text class="project-price">￥5-20万</text>
+    </view>
+    <view class="project-info-right">
+      <view class="project-share">
+        <image class="share-img" src=""></image>
+        <view>分享</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="project-more-info">
+    <view class="more-info-item">
+      <view class="item-info">
+        <image class="info-icon" src=""></image>
+        <text class="info-text">直营店</text>
+      </view>
+      <view class="info-count">128家</view>
+    </view>
+
+    <view class="more-info-item">
+      <view class="item-info">
+        <image class="info-icon" src=""></image>
+        <text class="info-text">加盟店</text>
+      </view>
+      <view class="info-count">290家</view>
+    </view>
+
+    <view class="more-info-item">
+      <view class="item-info">
+        <image class="info-icon" src=""></image>
+        <text class="info-text">申请加盟</text>
+      </view>
+      <view class="info-count">2183人</view>
+    </view>
+
+    <view class="more-info-item">
+      <view class="item-info">
+        <image class="info-icon" src=""></image>
+        <text class="info-text">品牌发源地</text>
+      </view>
+      <view class="info-count">温州</view>
+    </view>
+
+    <view class="more-info-item">
+      <view class="item-info">
+        <image class="info-icon" src=""></image>
+        <text class="info-text">品牌注册时间</text>
+      </view>
+      <view class="info-count">2017年</view>
+    </view>
+  </view>
+
+
+  <view class="project-content">
+    <view class="tabs-box">
+      <block wx:for="{{['项目介绍' ,'项目优势','加盟条件','企业简介']}}">
+        <view class="tabs-item {{currentTabsIndex==index?'active':''}}" bindtap="onTabsItemTap" data-index="{{index}}">{{item}}</view>
+      </block>
+    </view>
+
+    <view class="project-detail-box">
+      <view class="project-detail-intro" hidden="{{currentTabsIndex!=0}}">
+        项目介绍
+      </view>
+
+      <view class="project-detail-superiority" hidden="{{currentTabsIndex!=1}}">
+        项目优势
+      </view>
+      <view class="project-detail-criteria" hidden="{{currentTabsIndex!=2}}">
+        加盟条件
+      </view>
+
+      <view class="project-detail-company" hidden="{{currentTabsIndex!=3}}">
+        企业简介
+      </view>
+
+
+      <view>内容</view>
+      <view>内容</view>
+      <view>内容</view>
+      <view>内容</view>
+      <view>内容</view>
+      <view>内容</view>
+      <view>内容</view>
+      <view>内容</view>
+      <view>内容</view>
+      <view>内容</view>
+      <view>内容</view>
+      <view>内容</view>
+      <view>内容</view>
+      <view>内容</view>
+      <view>内容</view>
+      <view>内容</view>
+      <view>内容</view>
+      <view>内容</view>
+      <view>内容</view>
+      <view>内容</view>
+      <view>内容</view>
+      <view>内容</view>
+      <view>内容</view>
+      <view>内容</view>
+    </view>
+
+
+  </view>
+
+
+  <view class="navBar">
+    <view class="home">
+      <image class="home-icon" src=""></image>
+      首页
+    </view>
+
+    <view class="collect">
+      <image class="collect-icon" src=""></image>
+      收藏
+    </view>
+
+    <view class="online-ask">
+      在线咨询
+    </view>
+
+    <view class="set-shop" bindtap="onGetProjectTap">
+      获取开店方案
+    </view>
+  </view>
+
+</view>

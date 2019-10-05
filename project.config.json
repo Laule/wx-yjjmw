@@ -123,6 +123,61 @@
 					"pathName": "pages/business/detail/detail",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/detail/detail",
+					"pathName": "pages/detail/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/project/project",
+					"pathName": "pages/project/project",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/project/project",
+					"pathName": "pages/project/project",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/project/project",
+					"pathName": "pages/project/project",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/project/get/get",
+					"pathName": "pages/project/get/get",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/toppic/toppic",
+					"pathName": "pages/toppic/toppic",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/project-list/project-list",
+					"pathName": "pages/project-list/project-list",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/project-list/project-list",
+					"pathName": "pages/project-list/project-list",
+					"scene": null
 				}
 			]
 		}

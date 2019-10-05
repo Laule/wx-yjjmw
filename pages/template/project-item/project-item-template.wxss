@@ -1,10 +1,13 @@
 .project-item-container {
   display: flex;
   flex-direction: row;
-  border-bottom: 1px solid #ddd;
   width: 730rpx;
   margin: 0 auto;
   /* background: yellow; */
+}
+
+.project-item-container:not(:last-child) {
+  border-bottom: 1px solid #ddd;
 }
 
 .project-item-img {

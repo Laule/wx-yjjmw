@@ -17,7 +17,7 @@
   <!-- 菜单  -->
   <view class="menu-container">
     <view class="menu-container-box">
-      <view class="menu-item">
+      <view class="menu-item" bindtap="onProjectTap">
         <image src="http://m.jmw.com.cn/images/new_icon/cy.png"></image>
         <text>餐饮</text>
       </view>

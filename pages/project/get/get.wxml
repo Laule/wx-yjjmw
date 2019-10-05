@@ -1,0 +1,25 @@
+<import src='../../template/project-item/project-item-template.wxml' />
+
+<view class="container">
+  <view class="project-info">
+    <template is="project-item" />
+  </view>
+
+  <view class="form-box">
+    <label>姓名</label>
+    <input type="text" placeholder="请输入你的称呼"></input>
+    <label>姓名</label>
+    <input type="text" placeholder="请输入手机号"></input>
+    <label>留言内容</label>
+    <textarea placeholder="想了解更多项目详情，请尽快与我联系！">
+    </textarea>
+
+    <label class="checkbox">
+      <checkbox value="同意" checked="1" />
+      <text>阅读并同意《相关条款》</text>
+    </label>
+    <button type="primary">提交信息 </button>
+  </view>
+
+
+</view>

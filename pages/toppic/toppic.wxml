@@ -1,0 +1,10 @@
+<import src='../template/project-item/project-item-template.wxml' />
+<view class="container">
+  <view class="banner">
+    <image src=""></image>
+  </view>
+
+  <block wx:for="{{[1,2,3,4,5,6]}}" wx:key>
+    <template is="project-item" />
+  </block>
+</view>

@@ -79,6 +79,13 @@ Page({
       url: '/pages/search/search',
     })
   },
+
+
+  onProjectTap: function() {
+    wx.navigateTo({
+      url: '/pages/project/project',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

@@ -1,0 +1,47 @@
+@import "../../template/project-item/project-item-template.wxss";
+
+page {
+  background-color: #f0f0f0;
+}
+
+.project-info {
+  background-color: #fff;
+  margin-top: 30rpx;
+}
+
+.form-box {
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20rpx;
+}
+
+.form-box label {
+  margin: 10rpx 0;
+}
+
+.form-box input {
+  border: 1px solid #ddd;
+  height: 80rpx;
+  padding-left: 10rpx;
+}
+
+.form-box textarea {
+  width: 100%;
+  border: 1px solid #ddd;
+  text-indent: 10rpx;
+  padding-top: 10rpx;
+}
+.checkbox
+{
+  font-size: 28rpx;
+}
+.checkbox checkbox{
+  width: 30rpx;
+  height: 30rpx;
+}
+.form-box button {
+  width: 100%;
+  margin-top: 10rpx;
+}

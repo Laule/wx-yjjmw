@@ -12,7 +12,11 @@
     "pages/person/feedback/feedback",
     "pages/person/about/about",
     "pages/business/detail/detail",
-    "pages/business/comment/comment"
+    "pages/business/comment/comment",
+    "pages/project/project",
+    "pages/project/get/get",
+    "pages/toppic/toppic",
+    "pages/project-list/project-list"
   ],
   "window": {
     "backgroundTextStyle": "light",

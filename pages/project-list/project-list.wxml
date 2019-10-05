@@ -1,0 +1,40 @@
+<import src='../template/project-item/project-item-template.wxml' />
+
+<view class="container">
+  <view class="search-container">
+
+    <view class="search-box">
+      <view class="search-icon">
+        <icon type="search" size="16"></icon>
+      </view>
+
+      <input class="search-input" bindinput="onListenInput" value="{{inputVal}}" type="text" placeholder="搜索项目" placeholder-class="search-input-place"></input>
+
+      <view wx:if="{{isInputClear}}" class="clear-icon" bindtap="onClearTap">
+        <icon type="clear" size="16"></icon>
+      </view>
+    </view>
+
+    <view class="search-btn" bindtap="onSearchTap">搜索</view>
+
+  </view>
+
+  <view class="nav-tabs">
+    <view class="tabs-item">全部行业
+      <image src=""></image>
+    </view>
+    <view class="tabs-item">不限金额
+      <image src=""></image>
+    </view>
+  </view>
+
+
+
+  <view class="project-list-container">
+    <block wx:for="{{[1,2,3,4,5,6]}}">
+      <template is="project-item" />
+    </block>
+  </view>
+
+
+</view>

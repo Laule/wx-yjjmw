@@ -1,4 +1,4 @@
-// pages/business/detail/detail.js
+// pages/project-list/project-list.js
 Page({
 
   /**
@@ -8,13 +8,6 @@ Page({
 
   },
 
-
-  onCommentTap:function(event)
-  {
-    wx.navigateTo({
-      url: '../comment/comment',
-    })
-  },
   /**
    * 生命周期函数--监听页面加载
    */

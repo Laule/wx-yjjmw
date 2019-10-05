@@ -1,0 +1,78 @@
+@import "../template/project-item/project-item-template.wxss";
+
+.search-container {
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  flex-direction: row;
+  background-color: #b4333d;
+  position: fixed;
+  top: 0;
+}
+
+.search-box {
+  background-color: #f8f8f8;
+  width: 660rpx;
+  height: 60rpx;
+  display: flex;
+  flex-direction: row;
+  margin: 15rpx auto 15rpx 10rpx;
+}
+
+.search-icon {
+  width: 70rpx;
+  line-height: 60rpx;
+  text-align: center;
+}
+
+.search-input {
+  height: 60rpx;
+  width: 520rpx;
+}
+
+.search-input-place {
+  color: #888;
+}
+
+.clear-icon {
+  line-height: 60rpx;
+  text-align: center;
+  width: 70rpx;
+}
+
+.search-btn {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 28rpx;
+  text-align: center;
+  width: 90rpx;
+  margin-top: 15rpx;
+  color: #fff;
+}
+
+.nav-tabs {
+  display: flex;
+  flex-direction: row;
+  height: 80rpx;
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #f0f0f0;
+  position: fixed;
+  top: 90rpx;
+}
+
+.tabs-item {
+  line-height: 80rpx;
+  width: 50%;
+  text-align: center;
+}
+
+.tabs-item image {
+  width: 32rpx;
+  height: 32rpx;
+  margin-top: 24rpx;
+  background-color: #ddd;
+}
+
+.project-list-container {
+  margin-top: 170rpx;
+}

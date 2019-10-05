@@ -1,0 +1,12 @@
+@import "../template/project-item/project-item-template.wxss";
+
+.banner {
+  height: 400rpx;
+  width: 100%;
+}
+
+.banner image {
+  height: 400rpx;
+  width: 100%;
+  background-color: #ddd;
+}
