@@ -1,49 +1,50 @@
-// pages/business/business.js
-Page({
+import {
+  Business
+} from 'business-model.js';
+var business = new Business();
 
-  /**
-   * 页面的初始数据
-   */
+Page({
   data: {
     navUnfold: false,
     currentIndex: 0,
-    navBarList: ["今日热议", "项目动态", "招商信息", "开店指导", "行业新闻", "防骗指南", "项目点评", "商机在线", "创业知识", "创业故事"]
+    navBarList: []
   },
 
-  /**
-   * 是否展开
-   */
+  onLoad: function(options) {
+    this._loadData();
+  },
+
+  // 加载数据
+  _loadData(callback) {
+    let that = this;
+    business.getNavBarList((data)=>{
+      console.log(data);
+      that.setData({
+        navBarList: data
+      });
+    })
+  },
+
+  // 是否展开
   onNavBarTap: function() {
     this.setData({
       navUnfold: !this.data.navUnfold
     })
   },
 
-  /**
-   * 切换Nav
-   */
+  // 切换NavBar
   onNavBarSwitchTap: function(event) {
-    let selectedIndex = event.currentTarget.dataset.index;
+    let selectedIndex = business.getcurrentTargetDataSet(event, 'index');
     this.setData({
       currentIndex: selectedIndex,
       navUnfold: false
     })
-    console.log(event);
   },
 
-  onBusinessTap:function(event)
-  {
-    console.log('点击');
-    wx.navigateTo({
-      url: './detail/detail',
-    })
+  onBusinessTap: function(event) {
+    business.jumpRoute('/pages/business/detail/detail');
   },
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function(options) {
 
-  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成

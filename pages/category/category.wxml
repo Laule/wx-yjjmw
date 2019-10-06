@@ -1,12 +1,10 @@
-<view class="category-container" style="height:{{windowHeight}}px;">
+<view class="container" style="height:{{windowHeight}}px;">
   <view class="category-search-container">
     <view class="category-search-box" bindtap='onCategorySearchTap'>
       <icon type="search" size="13"></icon>
       搜索商品
     </view>
   </view>
-
-
   <view class="category-box" style="height:{{windowHeight-46}}px;">
     <!--左侧栏-->
     <scroll-view class="left-box" scroll-y="{{true}}" style="height:{{windowHeight-46}}px;">

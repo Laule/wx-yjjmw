@@ -31,7 +31,6 @@ Page({
         categoryTypeArr: categoryData
       });
       category.getCategoryByChild(categoryData[0].id, (data) => {
-        console.log(categoryData);
         let categoryInfo0 = {
           childCategory: data,
           topImgUrl: categoryData[0].img.url,
@@ -51,28 +50,14 @@ Page({
 
 
   onCategorySwitchTap: function(event) {
-
-    console.log(event);
-
     let id = category.getTargetDataSet(event, 'id'),
-      index =category.getTargetDataSet(event, 'index');
-
-
-    
-
-    console.log("切换分类" + index);
-   
-
-
-    console.log(index);
-    console.log(this.data.curIndex);
-
+      index = category.getTargetDataSet(event, 'index');
     if (index === this.data.curIndex) return;
     this.setData({
       currentMenuId: id,
       curIndex: index
     });
-    
+
 
     //判断是否第一次加载
     if (!this.isLoadedData(index)) {
@@ -99,7 +84,6 @@ Page({
       categoryTypeArr = this.data.categoryTypeArr,
       baseData = categoryTypeArr[index],
       nextBaseData = (categoryTypeArr.length - 1 === index) ? false : categoryTypeArr[index + 1];
-
     obj['categoryInfo' + index] = {
       childCategory: data,
       topImgUrl: baseData.img.url,

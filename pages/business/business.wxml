@@ -12,7 +12,6 @@
     </view>
     <view wx-if="{{navUnfold}}" class="navBar-overall" catchtouchmove="ture">
       <view class="navBar-overall-container">
-
         <view class="navBar-overall-header">
           <view class="title">点击进入栏目</view>
           <view class="close" catchtap="onNavBarTap">关闭</view>

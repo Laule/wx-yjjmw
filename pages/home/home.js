@@ -20,7 +20,7 @@ Page({
    * 加载页面数据
    */
   _loadData: function(callback) {
-    var that = this;
+    let that = this;
 
     // 获取Banner信息
     home.getBannerData((data) => {
