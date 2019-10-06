@@ -1,5 +1,5 @@
 <template name="business-item-one">
-  <view class="business-item-one" bindtap="onBusinessTap">
+  <view class="business-item-one" bindtap="onBusinessItemTap">
     <view class="business-one-info">
       <text class="business-one-title">农民工居然靠这个能赚这么多钱，我们是不是应该学学？农民工居然靠这个能赚这么多钱，我们是不是应该学学？</text>
       <view class="business-tag-comment-date">

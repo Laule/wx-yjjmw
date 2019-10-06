@@ -41,7 +41,8 @@ Page({
     })
   },
 
-  onBusinessTap: function(event) {
+  onBusinessItemTap: function(event) {
+    console.log(event);
     business.jumpRoute('/pages/business/detail/detail');
   },
 
