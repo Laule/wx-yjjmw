@@ -3,6 +3,7 @@
   "usingComponents": {
     "swiperImg": "../../components/swiper-img/index",
     "slidePattern": "../../components/slide-pattern/index",
-    "slidePatternModal": "../../components/slide-pattern-modal/index"
+    "slidePatternModal": "../../components/slide-pattern-modal/index",
+    "swiperVertical": "../../components/swiper-vertical/index"
   }
 }

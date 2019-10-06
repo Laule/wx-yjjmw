@@ -11,7 +11,6 @@ class Home extends Base {
     var param = {
       url: 'homeBanner.json',
       sCallback: function(data) {
-        console.log(data);
         callback && callback(data);
       }
     };

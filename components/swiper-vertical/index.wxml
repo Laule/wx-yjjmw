@@ -1,0 +1,16 @@
+<swiper class="info-list" vertical='{{true}}' autoplay>
+  <swiper-item>
+    <view class="info-item">
+      <image class="info-img" src="http://attachment2.jmw.com.cn/pic/2019/07/29/90961564393995.jpg!m-w270h203"></image>
+      <view class="info-content">
+        <text class="info-title">城市实时仿真成为可能212112121221，智能城市...</text>
+        <view class="info-link">
+          <image class="info-link-icon" src="/images/icon/date.png"></image>
+          <text class="info-link-num">2019-9-24</text>
+          <image class="info-link-icon m-l-20" src="/images/icon/view.png"></image>
+          <text class="info-link-num">224</text>
+        </view>
+      </view>
+    </view>
+  </swiper-item>
+</swiper>

@@ -6,7 +6,7 @@ Page({
   data: {
     loadingHidden: false,
     swiperBannerData: [],
-    menuData:[],
+    menuData: [],
     themeData: [],
     topBrandData: [],
     hotIndustryData: []
@@ -25,14 +25,14 @@ Page({
     // 获取Banner信息
     home.getBannerData((data) => {
       that.setData({
-        swiperBannerData: data,
+        swiperBannerData: data
       });
     });
 
     // 获取Menu信息
     home.getMenuData((data) => {
       that.setData({
-        menuData: data,
+        menuData: data
       });
     });
 
@@ -62,20 +62,17 @@ Page({
   },
 
 
-  /**
-   * 跳转到搜索页面
-   */
   onSearchTap: function(e) {
-    wx.navigateTo({
-      url: '/pages/search/search',
-    })
+    home.jumpRoute('/pages/search/search');
   },
 
 
-  onProjectTap: function() {
-    wx.navigateTo({
-      url: '/pages/project/project',
-    })
+  onBannerSwiperTap: function(event) {
+    console.log(event);
+  },
+
+  onMenuTap: function() {
+    home.jumpRoute('/pages/project/project');
   },
 
 
@@ -86,6 +83,7 @@ Page({
   onSlidePatternModalTap: function(res) {
     console.log(res);
   },
+
   /**
    * 监听页面滚动事件
    */
@@ -93,9 +91,7 @@ Page({
   //   console.log(e);
   // },
 
-  onBannerSwiperTap: function(event) {
-    console.log(event);
-  },
+
 
 
   /**
@@ -130,14 +126,16 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function() {
-
+    this._loadData(() => {
+      wx.stopPullDownRefresh()
+    });
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function() {
-
+    console.log('加载更多');
   },
 
   /**

@@ -4,11 +4,12 @@ import {
 var category = new Category();
 Page({
   data: {
-    currentMenuIndex: '',
+    currentMenuId: '',
     curIndex: 0,
     windowHeight: '',
     categoryTypeArr: [],
-    currentCategoryInfo: ''
+    currentCategoryInfo: '',
+    loadingHidden: false
   },
 
   onLoad: function(options) {
@@ -26,20 +27,22 @@ Page({
     });
     category.getCategoryType((categoryData) => {
       that.setData({
-        currentMenuIndex: categoryData[0].id,
+        currentMenuId: categoryData[0].id,
         categoryTypeArr: categoryData
       });
       category.getCategoryByChild(categoryData[0].id, (data) => {
+        console.log(categoryData);
         let categoryInfo0 = {
           childCategory: data,
           topImgUrl: categoryData[0].img.url,
           nextTitle: categoryData[1].name,
           nextId: categoryData[1].id,
-          curIndex: 1
+          curIndex: 0
         };
         that.setData({
           categoryInfo0,
-          currentCategoryInfo: categoryInfo0
+          currentCategoryInfo: categoryInfo0,
+          loadingHidden: true
         });
         callback && callback();
       });
@@ -47,15 +50,29 @@ Page({
   },
 
 
-  onCategorySwitchTap: function(e, nextId, nextIndex) {
+  onCategorySwitchTap: function(event) {
 
-    console.log(e);
-    let id = e ? e.target.dataset.id : nextId,
-      index = e ? e.target.dataset.index : nextIndex;
+    console.log(event);
+
+    let id = category.getTargetDataSet(event, 'id'),
+      index =category.getTargetDataSet(event, 'index');
+
+
+    
+
+    console.log("切换分类" + index);
+   
+
+
+    console.log(index);
+    console.log(this.data.curIndex);
+
+    if (index === this.data.curIndex) return;
     this.setData({
-      currentMenuIndex: id,
+      currentMenuId: id,
       curIndex: index
     });
+    
 
     //判断是否第一次加载
     if (!this.isLoadedData(index)) {
@@ -88,24 +105,21 @@ Page({
       topImgUrl: baseData.img.url,
       nextTitle: nextBaseData ? nextBaseData.name : '',
       nextId: nextBaseData ? nextBaseData.id : '',
-      curIndex: index + 1
+      curIndex: index
     };
     obj['currentCategoryInfo'] = obj['categoryInfo' + index];
     this.setData(obj);
   },
-  loadmore: function(e) {
-    console.log(e);
-    let nextId = e.target.dataset.nextid;
-    let nextIndex = e.target.dataset.nextindex;
-    console.log(nextId, nextIndex);
-    this.onCategorySwitchTap(null, nextId, nextIndex)
-    console.log('加载更多');
-  },
+
   onCategorySearchTap: function() {
-    wx.navigateTo({
-      url: '/pages/search/search',
-    })
+    category.jumpRoute('/pages/search/search');
   },
+
+
+  onRankTap: function(event) {
+    console.log(event);
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

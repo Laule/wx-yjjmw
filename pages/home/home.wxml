@@ -1,73 +1,32 @@
 <import src='../template/project-item/project-item-template.wxml' />
-<view class="container">
-  <!-- 搜索 -->
+<view class="container" hidden="{{!loadingHidden}}">
   <view class="search-container">
     <icon type="search" size="13" color="#ffffff" class="search-img"></icon>
     <input disabled class="search-input" placeholder="请输入关键词" placeholder-class="search-placeholder" bindtap="onSearchTap"></input>
     <text class="search-text">搜索</text>
   </view>
-  <!-- 搜索 -->
 
-  <!-- 轮播 -->
   <swiperImg bind:changeCurrent="onBannerSwiperTap" swiperBannerData="{{swiperBannerData}}" />
-  <!-- 轮播 -->
 
-  <!-- 菜单  -->
   <view class="menu-container">
     <view class="menu-container-box">
       <block wx:for="{{menuData}}" wx:key>
-        <view class="menu-item" bindtap="onProjectTap">
+        <view class="menu-item" bindtap="onMenuTap">
           <image src="{{item.img_url}}"></image>
           <text>{{item.name}}</text>
         </view>
       </block>
     </view>
   </view>
-  <!-- 菜单-->
-  
 
-  <!-- 头条 -->
   <view class="info-container">
     <view class="info-main-title">
       <text>加盟\n头条</text>
     </view>
-    <swiper class="info-list" vertical='{{true}}' autoplay>
-      <swiper-item>
-        <view class="info-item">
-          <image class="info-img" src="http://attachment2.jmw.com.cn/pic/2019/07/29/90961564393995.jpg!m-w270h203"></image>
-          <view class="info-content">
-            <text class="info-title">城市实时仿真成为可能212112121221，智能城市...</text>
-            <view class="info-link">
-              <image class="info-link-icon" src="/images/icon/date.png"></image>
-              <text class="info-link-num">2019-9-24</text>
-              <image class="info-link-icon m-l-20" src="/images/icon/view.png"></image>
-              <text class="info-link-num">224</text>
-            </view>
-          </view>
-        </view>
-      </swiper-item>
-
-      <swiper-item>
-        <view class="info-item">
-          <image class="info-img" src="http://attachment2.jmw.com.cn/pic/2019/07/29/90961564393995.jpg!m-w270h203"></image>
-          <view class="info-content">
-            <text class="info-title">微信小程序text文本溢出省略在某种状态下隐藏失败的小问题</text>
-            <view class="info-link">
-              <image class="info-link-icon" src="/images/icon/date.png"></image>
-              <text class="info-link-num">2019-9-24</text>
-              <image class="info-link-icon m-l-20" src="/images/icon/view.png"></image>
-              <text class="info-link-num">221</text>
-            </view>
-          </view>
-        </view>
-      </swiper-item>
-
-    </swiper>
+    <swiperVertical />
     <image class="info-more" src="/images/icon/right-arrow.png"></image>
   </view>
-  <!-- 头条 -->
 
-  <!-- 加入 -->
   <view class="join-container">
     <view class="join-box">
       <view class="join-title">
@@ -85,44 +44,24 @@
       <image class="join-img" src="http://image1.jmw.com.cn/public/img/xinxiliu_3.png"></image>
     </view>
   </view>
-  <!-- 加入 -->
 
-  <!-- 专题 -->
-  <!-- 自定义组件 -->
   <slidePattern bind:changeCurrent="onSlidePatternTap" slidePatternTitle="精选专题" slidePatternData="{{themeData}}"></slidePattern>
-  <!-- 专题 -->
-
-  <!-- 热门行业 -->
   <slidePatternModal bind:changeCurrent="onSlidePatternModalTap" slidePatternModalTitle="热门行业" slidePatternModalData="{{hotIndustryData}}"></slidePatternModal>
-
-  <!-- 热门行业 -->
-
-
-  <!-- 人气品牌 -->
-
   <slidePattern bind:changeCurrent="onSlidePatternTap" slidePatternTitle="人气品牌" slidePatternData="{{topBrandData}}"></slidePattern>
-  <!-- 人气品牌 -->
 
-  <!-- 品牌推荐 -->
   <view class="project-recommend-container">
     <view class="project-recommend-header">
       <text class="project-recommend-text">品牌推荐</text>
       <text class="project-apply-total-num">8232人已申请加盟</text>
     </view>
-
     <template is="project-item" />
-
-
   </view>
-  <!-- 品牌推荐 -->
 
-
-  <!-- 提醒 -->
   <view class="tips-container">
     <image class="tips-logo"></image>
     <text class="tips-text">源进加盟网友情提醒:投资有风险 加盟需谨慎</text>
   </view>
-  <!-- 提醒 -->
-
-
 </view>
+<loading hidden="{{loadingHidden}}">
+  加载中...
+</loading>

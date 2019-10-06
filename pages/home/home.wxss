@@ -1,7 +1,7 @@
 @import "../template/project-item/project-item-template.wxss";
 
 page {
-  background-color: #eee;
+  background-color: #f0f0f0;
 }
 
 .search-container {
@@ -101,54 +101,6 @@ page {
   color: #e11414;
   font-weight: bold;
   padding-top: 10rpx;
-  vertical-align: middle;
-}
-
-.info-list {
-  width: 550rpx;
-}
-
-.info-item {
-  display: flex;
-  flex-direction: row;
-}
-
-.info-img {
-  margin-top: 15rpx;
-  width: 80rpx;
-  height: 80rpx;
-  border-radius: 10rpx;
-}
-
-.info-content {
-  width: 450rpx;
-  overflow: hidden;
-  margin-top: 15rpx;
-  margin-left: 20rpx;
-}
-
-.info-title {
-  display: block;
-  color: rgba(16, 16, 16, 1);
-  font-size: 28rpx;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.info-link {
-  color: #bfbfbf;
-}
-
-.info-link-icon {
-  width: 24rpx;
-  height: 24rpx;
-  vertical-align: middle;
-}
-
-.info-link-num {
-  padding-left: 5rpx;
-  font-size: 24rpx;
   vertical-align: middle;
 }
 

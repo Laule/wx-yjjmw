@@ -1,11 +1,12 @@
 // import { Token } from 'token.js';
-import { Config } from 'config.js';
+import {
+  Config
+} from 'config.js';
 
 class Base {
   constructor() {
     "use strict";
     this.baseRestUrl = Config.restUrl;
-    this.onPay = Config.onPay;
   }
 
   //http 请求类, 当noRefech为true时，不做未授权重试机制
@@ -27,7 +28,7 @@ class Base {
         'content-type': 'application/json',
         'token': wx.getStorageSync('token')
       },
-      success: function (res) {
+      success: function(res) {
 
         // 判断以2（2xx)开头的状态码为正确
         // 异常不要返回到回调中，就在request中处理，记录日志并showToast一个统一的错误即可
@@ -45,7 +46,7 @@ class Base {
           params.eCallback && params.eCallback(res.data);
         }
       },
-      fail: function (err) {
+      fail: function(err) {
         //wx.hideNavigationBarLoading();
         that._processError(err);
         // params.eCallback && params.eCallback(err);
@@ -64,11 +65,24 @@ class Base {
     });
   }
 
-  /*获得元素上的绑定的值*/
-  getDataSet(event, key) {
+  /*获得currentTarget元素上的绑定的值*/
+  getcurrentTargetDataSet(event, key) {
     return event.currentTarget.dataset[key];
   };
 
+  /* 获得Target元素上的绑定的值*/
+  getTargetDataSet(event, key) {
+    return event.target.dataset[key];
+  }
+
+  /*跳转到某一个链接*/
+  jumpRoute(url) {
+    wx.navigateTo({
+      url: url,
+    })
+  }
 };
 
-export { Base };
+export {
+  Base
+};
